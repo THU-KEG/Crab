@@ -1,6 +1,6 @@
 # Constraint Back-translation Improves Complex Instruction Following of Large Language Models
 <p align="center">
-    <a href="https://arxiv.org/abs/2405.05008"><img alt="Paper" src="https://img.shields.io/badge/📖-Paper-orange"></a>
+    <a href="https://arxiv.org/abs/2410.24175"><img alt="Paper" src="https://img.shields.io/badge/📖-Paper-orange"></a>
     <a href="https://huggingface.co/collections/THU-KEG/crab-672474f5ba8200630b57f884"><img alt="Dataset and Models" src="https://img.shields.io/badge/🤗 HuggingFace-Dataset and Models-green"></a>
     <a href="https://github.com/THU-KEG"><img src="https://img.shields.io/badge/THU-KEG_Group-blueviolet"></a>
 </p>
