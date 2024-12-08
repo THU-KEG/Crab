@@ -70,22 +70,6 @@ Constraint_Types = {
         "Designate the language or languages in which the response is expected to be articulated.",
         "Define the particular language(s) that the response should be delivered in."
     ],
-    "Specific_Literary_Devices": [
-        "Specific_Literary_Devices: Identify any particular literary devices to be employed in the output.",
-        "Identify any specific literary techniques that should be utilized in the output.",
-        "Specify the particular literary devices that are to be incorporated into the response.",
-        "Outline any distinct literary elements that need to be employed in the final output.",
-        "Clarify which specific literary devices are expected to be used in the composition.",
-        "Designate the literary techniques that ought to be included in the produced text."
-    ],
-    "Specific_Grammatical_Structure": [
-        "Specific_Grammatical_Structure: Specify the grammatical structure the response should adhere to.",
-        "Specify the grammatical framework that the response must follow.",
-        "Indicate the particular grammatical structure that should be maintained in the response.",
-        "Outline the specific grammatical form that the output needs to adhere to.",
-        "Clarify the grammatical conventions that should be observed in crafting the response.",
-        "Designate the grammatical patterns that the response is required to conform to."
-    ],
     "Hierarchical_Instructions": [
         "Hierarchical_Instructions: Establish a response hierarchy, defining the prioritization and structuring of tasks within the output.",
         "Establish a hierarchy for the response, outlining the prioritization and organization of tasks within the output.",
@@ -155,6 +139,28 @@ Constraint_Types = {
         "What punctuation marks are prohibited in the output text?",
         "Determine and specify the punctuation marks that cannot be used in the output text."
     ],
+    "Paragraph":[
+        "Sentence limitation: Please determine the number of sentences in each paragraph to establish sentence constraints. For example, specify a maximum number of sentences per paragraph.",
+        "Could you determine how many sentences are in each paragraph to set a constraint on the sentence count? For example, specify the maximum number of sentences allowed per paragraph.",
+        "Sentence count constraint: Please identify the number of sentences in each paragraph, and consider setting a limit, such as a maximum number of sentences per paragraph.",
+        "How many sentences are in each paragraph? Please calculate this to help establish sentence limitations, such as a maximum sentence count per paragraph.",
+        "To establish a sentence limit: Determine the number of sentences in each paragraph and impose constraints, like setting a maximum number of sentences.",
+        "Please find the sentence count in each paragraph so we can apply a limitation, such as capping the number of sentences per paragraph.",
+    ],
+    "Sentence":[
+        "Ensure you determine the number of words in each sentence to set word constraints, like a maximum word count per sentence.",
+        "Word limitation: Could you determine the number of words in each sentence to set a constraint on word count? For example, specify the maximum number of words allowed per sentence.",
+        "Word count constraint: Please identify the number of words in each sentence, and consider setting a limit, such as a maximum word count per sentence.",
+        "How many words are in each sentence? Please calculate this to help establish word limitations, such as a maximum word count per sentence.",
+        "Would you mind determining the word count in each sentence to help set word constraints? For instance, specify a maximum word number per sentence."
+    ],
+    "Others":[
+        "Any other constraints you deem necessary.",
+        "What other constraints do you consider necessary?",
+        "Please specify any additional constraints that you find essential.",
+        "Could you identify any other constraints that you think are necessary?",
+        "List any further constraints you believe are crucial."
+    ]
 }
 
 # ===================================== QUERY Output ============================

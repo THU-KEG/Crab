@@ -28,8 +28,11 @@ if __name__ == "__main__":
     out_file = open(output_file, "w")
 
     unified_data = []
+    python_key = ["Paragraph", "Sentence", "Word", "Keyword", "Punctuation", "Digit"]
     for i, vert in enumerate(data):
         for key,value in vert["Aug_instruction"]["Additional_Instruction"].items():
+            if key in python_key:
+                continue
             unified_instance = copy.deepcopy(vert)
             prompt = Constraints_Check.format(
                 c=value,
@@ -42,7 +45,7 @@ if __name__ == "__main__":
                 "result": {"success": False, "completions": ""},
             }
             unified_instance["Constraints_Type"]=key
-
+            del unified_instance["Aug_instruction"]
 
             unified_data.append(unified_instance)
         # out_file.write(json.dumps(unified_instance) + "\n")
@@ -53,4 +56,5 @@ if __name__ == "__main__":
         indent=4,
     )
     out_file.close()
+
     print("total_number:", len(unified_data))

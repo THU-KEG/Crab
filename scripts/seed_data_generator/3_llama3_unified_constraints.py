@@ -157,7 +157,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--num_sample",
         type=int,
-        default=10000,
+        default=20000,
     )
     parser.add_argument(
         "--origin_file",
@@ -266,6 +266,9 @@ if __name__ == "__main__":
             unified_data[i]["Aug_instruction"]["Refined_Instruction"] = eval(d["request"]["result"]["completions"])
         except:
             unified_data[i]["Aug_instruction"]["Refined_Instruction"] = d["request"]["result"]["completions"]
+        if "refined instruction:\n\n" in unified_data[i]["Aug_instruction"]["Refined_Instruction"]:
+            tmp = unified_data[i]["Aug_instruction"]["Refined_Instruction"].split("refined instruction:\n\n")
+            unified_data[i]["Aug_instruction"]["Refined_Instruction"] = tmp[-1]
 
     print("Get refined_instruction.")
 

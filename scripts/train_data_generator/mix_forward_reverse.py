@@ -122,9 +122,7 @@ if __name__ == "__main__":
     )
 
     unified_data = []
-    if args.forward_shuffle == True:
-        print("forward_shuffle",args.forward_shuffle)    
-        random.shuffle(forward_data)
+    random.shuffle(forward_data)
     random.shuffle(reverse_data)
     random.shuffle(fewshot_data)
 
@@ -176,7 +174,7 @@ if __name__ == "__main__":
     print("total_number:", len(unified_data))
     if len(unified_data) != 0:
         last_num_s = {key: last_num[key] for key in sorted(last_num.keys())}
-        print("avg_cons:",num_of_Cons/(len(unified_data)-args.conifer_num), last_num_s)
+        print("avg_cons:",num_of_Cons/len(unified_data), last_num_s)
         print("dataset_num:",source_count)
 
     for i, vert in enumerate(reverse_data):

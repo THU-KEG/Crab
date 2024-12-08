@@ -1,8 +1,7 @@
 Generate_Refined_Instruction = '''As a linguist with expertise in contextual language nuances, please refine the #Given Instruction# to increase its specificity and detail, ensuring it aligns more closely with the #Given Output#. 
-Please note that refining the instruction will overwrite the #Given Instruction#. Ensure that you do not omit non-text elements such as tables and code, as well as any input provided in the #Given Instruction#.
+Please note that refining the instruction will overwrite the #Given Instruction#. Ensure that you do not omit non-text elements such as tables and code, as well as any input text provided in the #Given Instruction#.
+This may involve clarifying the subject or object, or defining the circumstances under which the instruction applies. 
 You should try your best not to make the #Refined Instruction# become verbose, #Refined Instruction# can only add 10 to 20 words into #Given Instruction#.
-This may involve adding conditions, clarifying the subject or object, or defining the circumstances under which the instruction applies. 
-You can also consider incorporating subtasks, narrowing the topic, setting higher standards, limiting resources, introducing specific criteria, and specifying sequence to better match the expected output.
 Please directly present your modifications, without using any headings or prefixes.
 
 #Given Instruction#
@@ -19,13 +18,13 @@ Please directly present your modifications, without using any headings or prefix
 Generate_Constraints_Global = """As a linguist with expertise in contextual language nuances, please add constraints to enrich the #Given Instruction# based on the #Given Output#. 
 The goal is to enhance the specificity and detail of the instruction to ensure that the response is more aligned with the output text.
 
+
+
 To supplement the #Given instruction# based on the #Given Output#, consider adding details that enhance the response's accuracy and relevance, such as:
-1. Desired_Writing_Style: Specify the style requirements for the response to align with the intended message and audience. These requirements may include tone, sentiment, formality, empathy, levels of ambiguity, and the use of humor or satire.
-2. Semantic_elements: Clearly articulate the main theme, focus, meaning, or underlying concept of the response. Additionally, specify any key messages or arguments that should be conveyed.
+1. Desired_Writing_Style: Specify the style requirements for the response to align with the intended message and audience. 
+2. Semantic_elements: Clearly articulate the main theme, focus, meaning, or underlying concept of the response.
 3. Morphological_Constraints: Outline specific prohibitions, such as avoiding certain words or phrases and refraining from specific formatting styles.
 4. Multi-lingual_Constraints: Specify the language(s) in which the response should be written.
-5. Specific_Literary_Devices: Identify any particular literary devices to be employed in the output.
-6. Specific_Grammatical_Structure: Specify the grammatical structure the response should adhere to.
 
 #Given Instruction#
 '{Instruction}'
@@ -33,7 +32,7 @@ To supplement the #Given instruction# based on the #Given Output#, consider addi
 #Given Output#
 '{Response}'
 
-Please format your response directly in JSON, using 'Constraint_Type' as the key and the specific constraint as its value. Please ensure that the constraints are provided as complete sentences and vary the expressions used across different sentences.
+Please format your response directly in JSON, using 'Constraint_Type' as the key and the specific constraint as its value. Please ensure that the constraints are provided as concise and complete sentences, each containing 10 to 20 words. Additionally, vary the expressions used across different sentences to maintain diversity in phrasing.
 If a particular constraint type is not applicable, use the value "NULL". For instance: `"Constraint_Type": "NULL",`.
 Do not include any headings or prefixes in your response. 
 """
@@ -44,7 +43,7 @@ The goal is to enhance the specificity and detail of the instruction to ensure t
 To supplement the #Given instruction# based on the #Given Output#, consider adding details that enhance the response's accuracy and relevance, such as:
 1. Hierarchical_Instructions: Establish a response hierarchy, defining the prioritization and structuring of tasks within the output.
 2. Special_Output_Format: Depending on the required format of the output—such as Python, tables, JSON, HTML, LaTeX—impose relevant format constraints.
-3. Paragraphs_Constraints: Clearly specify the required number of paragraphs or sections in the text. Additionally, indicate any specific spacing or separators needed—such as blank lines, horizontal rules, or special symbols like "******"—to enhance readability and visual appeal.
+3. Paragraphs_Constraints: Clearly specify the required number of paragraphs or sections in the text. Additionally, indicate any specific spacing or separators needed—such as horizontal rules, or special symbols like "******"—to enhance readability and visual appeal.
 4. Specific_Sentence: Specify a particular phrase to be included either at the beginning or end of the text, clearly indicating its exact placement.
 5. Key_Formatting: Specify the formatting style for titles or keywords within the #Given Output#, such as using bold (**bold**), italics (*italics*), or CAPITAL LETTERS. Clearly indicate the specific format to be used, providing examples if necessary, to ensure precise adherence to the desired style. If no specific formatting is required, respond with 'NULL'.
 6. Item_Listing_Details: Clearly specify the formatting for individual entries within the text. Direct the use of specific symbols for listing—such as bullet points (•), numbers (1., 2., 3., etc.), or hyphens (-). Ensure that these symbols are explicitly mentioned. You may provide generalized examples, like '- Item Name: Description,' but avoid overly specific examples that could dictate the #Given Output#.
@@ -55,7 +54,7 @@ To supplement the #Given instruction# based on the #Given Output#, consider addi
 #Given Output#
 '{Response}'
 
-Please format your response directly in JSON, using 'Constraint_Type' as the key and the specific constraint as its value. Please ensure that the constraints are provided as complete sentences and vary the expressions used across different sentences.
+Please format your response directly in JSON, using 'Constraint_Type' as the key and the specific constraint as its value. Please ensure that the constraints are provided as concise and complete sentences, each containing 10 to 20 words. Additionally, vary the expressions used across different sentences to maintain diversity in phrasing.
 If a specific type of constraint cannot be derived from the #Given Output#, assign the value "NULL". For example: `"Constraint_Type": "NULL",`. 
 Ensure that all provided constraints, particularly 'Style_Formatting' and 'Item_Listing_Details', accurately align with the #Given Output#.
 Do not include any headings or prefixes in your response.  
@@ -210,11 +209,35 @@ Word_Format = [ #max
   ]
 
 
-Constraints_Check = '''Review the provided text and its corresponding constraint. Assess if the constraint is accurately consistent with the text. If they match, output 'Yes'. If not, output 'No'.
+Constraints_Check = '''Given the provided text and its corresponding constraint, determine whether the text satisfies the constraint. If the constraint is satisfied, output "YES".  If the constraint is not satisfied, output "NO", provide an explanation of why the text does not satisfy the constraint, and then provide a modified version of the constraint that would make it align with the text. After providing the modified constraint, assess whether the modified constraint serves as a meaningful restriction and include this judgment in your response.
+
+If the original or modified constraint does not serve as a meaningful restriction (i.e., it is too vague or does not impose any actual limit), indicate this by setting "constraint_validity" to "NO". For example, the constraint is "The output should consist of a single paragraph or multiple paragraphs without a specific separation requirement.". This constraint itself has no actual restrictive effect.
+
+The response should be in JSON format with the following structure:
+{{
+  "satisfaction": "<YES or NO>",
+  "explanation": "<reason for the mismatch if applicable>",
+  "modified_constraint": "<modified constraint text if applicable>"
+  "constraint_validity": "<YES or NO>"
+}}
+Do not include any headings or prefixes in your response. 
+
+# Example #
+Constraint: 'The text must include at least three different colors.'
+
+Text: 'The sky is blue, and the grass is green.'
+
+Response:
+{{
+  "satisfaction": "NO",
+  "explanation": "The text only mentions two colors: blue and green.",
+  "modified_constraint": "The text must include at least two different colors.",
+  "constraint_validity": "YES"
+}}
+
+# Query #
+Constraints: '{c}'
 
 Text: '{text}'
 
-Constraints: '{c}'
-
-Please answer 'Yes' or 'No' directly.
-'''
+Response:'''

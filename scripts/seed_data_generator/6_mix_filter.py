@@ -12,8 +12,11 @@ from sentence_transformers import SentenceTransformer, util
 
 def calculate_rouge_l(reference, hypothesis):
     rouge = Rouge()
-    scores = rouge.get_scores(hypothesis, reference)
-    return scores[0]['rouge-l']["f"]
+    try:
+        scores = rouge.get_scores(hypothesis, reference)
+        return scores[0]['rouge-l']["f"]
+    except:
+        return 1.0
 
 
 def check_length(messages, word_limit):
@@ -112,7 +115,7 @@ if __name__ == "__main__":
     print("datasets:",datasets)
     if datasets != ["Null"]:
         for dataset in datasets:
-            file = args.input_dir + "/3_" + dataset + "_constraints.json"
+            file = args.input_dir + "/5_" + dataset + "_constraints.json"
             with open(file, "r", encoding="utf-8") as reader:
                 d = json.load(reader)
                 reader.close()
@@ -145,3 +148,18 @@ if __name__ == "__main__":
     out_file.close()
     print("total_number:", len(unified_data))
     print("avg_constraints:", num_c/len(unified_data))
+
+    constraint_type={}
+    for vert in unified_data:
+        for key in vert["Aug_instruction"]["Additional_Instruction"].keys():
+            if key not in constraint_type:
+                constraint_type[key] = 0
+            constraint_type[key] += 1
+    
+    out_file = open(os.path.join(output_folder, "_".join(datasets)+"_constraint_type.json"), "w", encoding="utf-8")
+    json.dump(
+        constraint_type,
+        out_file,
+        indent=4,
+    )
+    out_file.close()

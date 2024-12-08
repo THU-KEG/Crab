@@ -9,6 +9,8 @@ import random
 import transformers
 from Forward_Prompt import *
 
+num_CType = dict()
+ICL_List = dict()
 
 def get_input_output(vert, num_cons, weighted, Com, Symbol, args):
 
@@ -25,6 +27,12 @@ def get_input_output(vert, num_cons, weighted, Com, Symbol, args):
         else:
             instruction = vert["messages"][0]["content"]
     
+    # mostly long story in the instruction:
+    Long_Flag = False
+    if len(vert["Aug_instruction"]["Refined_Instruction"].split(" ")) < len(vert["messages"][0]["content"].split(" ")):
+        Long_Flag = True
+        Com = random.sample(Long_Combination, 1)[0]
+
 
     Sample_keys = []
     w = dict()
@@ -41,9 +49,9 @@ def get_input_output(vert, num_cons, weighted, Com, Symbol, args):
     
     Constraints = []
     for item in Sample_keys:
-        # if item not in num_CType:
-        #     num_CType[item] = 0
-        # num_CType[item] += 1
+        if item not in num_CType:
+            num_CType[item] = 0
+        num_CType[item] += 1
         Constraints.append(vert["Aug_instruction"]["Additional_Instruction"][item])
 
     random.shuffle(Constraints)
@@ -51,7 +59,10 @@ def get_input_output(vert, num_cons, weighted, Com, Symbol, args):
     if Symbol == " ":
         additional_instruction = " ".join(Constraints)
     else:
-        additional_instruction = "\n"
+        if Long_Flag ==  False:
+            additional_instruction = "\n"
+        else:
+            additional_instruction = ""
         Symbol = Com[1] + Symbol
         if "index" in Symbol:
             additional_instruction += (
@@ -100,38 +111,12 @@ if __name__ == "__main__":
     output_folder.mkdir(exist_ok=True, parents=True)
     output_file = os.path.join(output_folder, args.output_file)
 
-
-    # W
-    weighted = {
-        "Paragraph": 0.5,
-        "Sentence": 0.7,
-        "Word": 0.7,
-        "Desired_Writing_Style": 0.3 + args.add_weight,
-        "Semantic_elements": 0.2 + args.add_weight,
-        "Morphological_Constraints": 0.2 + args.add_weight,
-        "Multi-lingual_Constraints": 0.2 + args.add_weight,
-        "Specific_Literary_Devices": 0.2 + args.add_weight,
-        "Specific_Grammatical_Structure": 0.2 + args.add_weight,
-        " Hierarchical_Instructions": 0.2 + args.add_weight,
-        "Hierarchical_Instructions": 0.2 + args.add_weight,
-        "Special_Output_Format": 0.2 + args.add_weight,
-        "Paragraphs_Constraints": 0.3 + args.add_weight,
-        "Specific_Sentence": 0.3 + args.add_weight,
-        "Key_Formatting": 0.0, 
-        "Item_Listing_Details": 0.0, 
-        "Digit": 0.5,
-        "Keyword": 0.5,
-        "Punctuation": 0.7,
-    }
-
-    num_CType = {}
-
     data = []
     datasets = args.datasets
     print("datasets:",datasets)
     if datasets != ["Null"]:
         for dataset in datasets:
-            file = args.input_dir + "/6_" + dataset + "_constraints.json"
+            file = args.input_dir + "/6_" + dataset + "_filter.json"
             print("input_dir:",args.input_dir)
             print("file:",file)
             with open(file, "r", encoding="utf-8") as reader:
@@ -140,6 +125,32 @@ if __name__ == "__main__":
             for i, vert in enumerate(d):
                 vert["source"] = dataset
                 data.append(copy.deepcopy(vert))
+
+    constraint_num = dict()
+    if datasets != ["Null"]:
+        for dataset in datasets:
+            file = args.input_dir + "/" + dataset + "_constraint_type.json"
+            with open(file, "r", encoding="utf-8") as reader:
+                c = json.load(reader)
+                reader.close()
+            for k,v in c.items():
+                if k not in constraint_num:
+                    constraint_num[k] = 0
+                constraint_num[k] += v
+    
+    weighted = dict()
+    for k, v in constraint_num.items():
+        weighted[k] = max((len(data) - v) / len(data) , 0.5)
+
+    # ===== DEBUG =====
+    out_file = open(os.path.join(output_folder, "INFO_forward_weighted.json"), "w", encoding="utf-8")
+    json.dump(
+        weighted,
+        out_file,
+        indent=4,
+    )
+    out_file.close()
+    # ===== ===== =====
 
     out_file = open(output_file, "w")
 
@@ -189,11 +200,14 @@ if __name__ == "__main__":
             shot_num = random.randint(1, args.shot_num)
         else:
             shot_num = 0
+        if i + 1 >= len(data):
+            shot_num = 0
         shots = []
         iter_num = 0
         while shot_num and iter_num < 10:
             iter_num += 1
-            shot = random.sample(data[i+1:], 1)[0]
+            end = min(i + iter_num * 50 , len(data))
+            shot = random.sample(data[i+1:end], 1)[0]
             idx = str(shot["cnt_id"]) + "_" + shot["source"]
             if idx not in ban:
                 ban.append(idx)
@@ -240,6 +254,7 @@ if __name__ == "__main__":
             "Num_Cons": num,
             "shots": [str(d["id"]) + "_" + d["source"] for d in shots]
         }
+        ICL_List[str(vert["id"]) + "_" + vert["source"]] = unified_instance["shots"]
         # print("====================")
         # print(unified_instance)
         for item in messages:
@@ -250,9 +265,6 @@ if __name__ == "__main__":
         unified_data.append(unified_instance)
 
     # unified_data = sorted(unified_data, key=lambda x: x['Num_Cons'], reverse=True)
-
-    # sorted_CType = dict(sorted(num_CType.items(), key=lambda item: item[1], reverse = False))
-    # sorted_CType = {key: num_CType[key] for key in sorted(num_CType.keys())}
                              
     json.dump(
         unified_data,
@@ -264,4 +276,22 @@ if __name__ == "__main__":
     print("avg_constraint:", total_num/len(unified_data))
     print("avg_shots:",total_shots/shot_instance)
     print("avg_word:", total_words/len(unified_data))
-    # print(sorted_CType)
+
+    # ===== DEBUG =====
+    sorted_CType = dict(sorted(num_CType.items(), key=lambda item: item[1], reverse = True))
+    out_file = open(os.path.join(output_folder, "INFO_forward_constraint_type.json"), "w", encoding="utf-8")
+    json.dump(
+        sorted_CType,
+        out_file,
+        indent=4,
+    )
+    out_file.close()
+
+    out_file = open(os.path.join(output_folder, "INFO_forward_ICL.json"), "w", encoding="utf-8")
+    json.dump(
+        ICL_List,
+        out_file,
+        indent=4,
+    )
+    out_file.close()
+    # ===== ===== =====

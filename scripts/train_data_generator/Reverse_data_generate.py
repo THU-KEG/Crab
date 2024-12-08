@@ -14,6 +14,14 @@ def get_input_output(vert, input_template, RFlag, AFlag, query_output, Sample_ke
         Instruction=vert["messages"][0]["content"],
     )
 
+    if "Others" in Sample_keys:
+        other_keys = []
+        for k in vert['Aug_instruction']['Additional_Instruction'].keys():
+            if k not in Sample_keys:
+                other_keys.append(k)
+        key = random.sample(other_keys, 1)[0]
+        vert['Aug_instruction']['Additional_Instruction']["Others"] = vert['Aug_instruction']['Additional_Instruction'][key]
+
     if AFlag:
         if "index" in query_output[3]:
             additional_instruction = (
@@ -56,8 +64,8 @@ if __name__ == "__main__":
     parser.add_argument("--input_dir", type=str, default="data/seed_data/")
     parser.add_argument("--output_dir", type=str, default="data/unified_data/")
     parser.add_argument("--output_file", type=str, default="back_data.json")
-    parser.add_argument("--min_number", type=int, default=3) # for constraints
-    parser.add_argument("--max_number", type=int, default=-1) # for constraints
+    parser.add_argument("--min_number", type=int, default=6) # for constraints
+    parser.add_argument("--max_number", type=int, default=8) # for constraints
     parser.add_argument("--shot_num", type=int, default=5)
     args = parser.parse_args()
 
@@ -65,49 +73,70 @@ if __name__ == "__main__":
     output_folder.mkdir(exist_ok=True, parents=True)
     output_file = os.path.join(output_folder, args.output_file)
 
-    data = []
+    data = dict()
     datasets = args.datasets
     print("datasets:",datasets)
     if datasets != ["Null"]:
         for dataset in datasets:
-            file = args.input_dir + "/6_" + dataset + "_constraints.json"
+            file = args.input_dir + "/6_" + dataset + "_filter.json"
             with open(file, "r", encoding="utf-8") as reader:
                 d = json.load(reader)
                 reader.close()
             for i, vert in enumerate(d):
-                data.append(copy.deepcopy(vert))
+                data[str(vert["id"]) + "_" + vert["source"]] = copy.deepcopy(vert)
 
+    # load ICL INFO
+    file = args.output_dir + "/INFO_forward_ICL.json"
+    with open(file, "r", encoding="utf-8") as reader:
+        icl = json.load(reader)
+        reader.close()
+    
+    Official_Constraint_Type = Constraint_Types.keys()
 
     out_file = open(output_file, "w")
     
     unified_data = []
-    ban = []
-    avg_x = 0
-    avg_y = 0
-    shot_cnt = 0
-    for i, vert in enumerate(data):
-        idx = str(vert["cnt_id"]) + "_" + vert["source"]
-        if idx in ban:
-            continue
+    cnt = 0
+    total_words = 0
+    for rootidx,iclidx in icl.items():
+        cnt += 1
+        vert = data[rootidx]
+        shots = []
+        constraint_types = []
+        for idx in iclidx:
+            shots.append(data[idx])
+        constraint_types = [x for x in vert["Aug_instruction"]["Additional_Instruction"].keys() if (all(x in shot["Aug_instruction"]["Additional_Instruction"].keys() for shot in shots) and x in Official_Constraint_Type)]
 
-        # if i > 3:
-        #     break
+
+        # ==== DEBUG ====
+        # if cnt < 10:
+        #     print(constraint_types)
+        # ===============
 
         OFlag = False
         RFlag = False
         AFlag = False
         OFlag = (int)(random.random() > 0.3)
-        RFlag = (int)(random.random() > 0.5)
+        RFlag = (int)(random.random() > 0.7)
         AFlag = (int)(random.random() > 0.5)
         if RFlag == False:
             AFlag = True
 
         # if vert["Aug_instruction"]["Additional_Instruction"]["Punctuation"] == "":
         #     del vert["Aug_instruction"]["Additional_Instruction"]["Punctuation"]
-        if args.max_number != -1:
-            num = random.randint(args.min_number, args.max_number) 
+
+        Length = len(constraint_types)
+        Dflag = (int)(random.random() > 0.3)
+        if Dflag:
+            min_number = min(args.min_number, Length)
+            if args.max_number != -1:
+                max_number = min(args.max_number, Length)
+            else:
+                max_number = Length
         else:
-            num = random.randint(args.min_number, len(vert["Aug_instruction"]["Additional_Instruction"].keys())) 
+            min_number = 1
+            max_number = Length
+        num = random.randint(min_number, max_number)  
 
         Ioverview = ""
         Irefined = ""
@@ -130,7 +159,12 @@ if __name__ == "__main__":
         
         Sample_keys = []
         if AFlag:
-            Sample_keys = random.sample(list(vert["Aug_instruction"]["Additional_Instruction"].keys()), num)
+            Sample_keys = random.sample(constraint_types, num)
+            if len(Sample_keys) < len(vert["Aug_instruction"]["Additional_Instruction"].keys()) and all(len(Sample_keys) < len(shot["Aug_instruction"]["Additional_Instruction"].keys()) for shot in shots):
+                OtherFlag = (int)(random.random() > 0.7)
+                if OtherFlag:
+                    Sample_keys.append("Others")
+
             Constraint_Sentences = []
             for item in Sample_keys:
                 Constraint_Sentences.append(random.sample(Constraint_Types[item],1)[0])
@@ -167,43 +201,36 @@ if __name__ == "__main__":
         
         prompt = instruction + "\n\n" + query_output[0] +"\n\n"
         # === few-shot ===
-        shot_num = random.randint(1, args.shot_num)
-        shots = []
-        iter_num = 0
-        temp_ban = []
-        while shot_num and iter_num < 10:
-            iter_num += 1
-            shot = random.sample(data[i+1:], 1)[0]
-            F = False
-            for Ckey in Sample_keys:
-                if Ckey not in shot["Aug_instruction"]["Additional_Instruction"]:
-                    F = True
-                    break
-            idx = str(shot["cnt_id"]) + "_" + shot["source"]
-            if F == False and idx not in ban and idx not in temp_ban:
-                temp_ban.append(idx)
-                shot_num -= 1
-                shots.append(shot)
-
-        if shot_num > 0:
-            continue
-        else:
-            shot_cnt += len(shots)
-            icl_template = random.sample(ICL,1)[0]
-            for item in shots:
-                idx = str(item["cnt_id"]) + "_" + item["source"]
-                ban.append(idx)
-                iinput, ioutput = get_input_output(item, input_template, RFlag, AFlag, 
+        shot_num = len(shots)
+        messages = []
+        for item in shots:
+            iinput, ioutput = get_input_output(item, input_template, RFlag, AFlag, 
                 query_output, Sample_keys)
-                avg_x += len(word_tokenize(item["messages"][1]["content"])) + len(word_tokenize(item["messages"][0]["content"]))
-                # avg_x += len(word_tokenize(item["messages"][1]["content"]))
-                avg_y += len(word_tokenize(ioutput))
-                prompt += icl_template[0] + iinput + "\n\n" + icl_template[1] + ioutput + "\n\n"
-            intput, output = get_input_output(vert, input_template, RFlag, AFlag, query_output, Sample_keys)
-            avg_x += len(word_tokenize(vert["messages"][1]["content"])) + len(word_tokenize(vert["messages"][0]["content"]))
-            # avg_x += len(word_tokenize(vert["messages"][1]["content"]))
-            avg_y += len(word_tokenize(output))
-            prompt += icl_template[0] + intput + "\n\n" + icl_template[1]
+            messages.append({
+                "role": "user",
+                "content": prompt + iinput,
+            })
+            messages.append({
+                "role": "assistant",
+                "content": ioutput,
+            })
+        input, output = get_input_output(vert, input_template, RFlag, AFlag, query_output, Sample_keys)
+        messages.append({
+            "role": "user",
+            "content": prompt + input,
+        })
+        messages.append({
+            "role": "assistant",
+            "content": output,
+        })
+
+        # if cnt < 10:
+        #     print("==================== ITEM :",cnt, "====================")
+        for item in messages:
+            # if cnt < 10:
+            #     print("--------------------")
+            #     print(item["content"])
+            total_words += len(item["content"].split(" "))
         
         # print("=============================")
         # print(prompt)
@@ -213,11 +240,7 @@ if __name__ == "__main__":
             "id": vert["id"],
             "cnt_id": vert["cnt_id"],
             "source": vert["source"],
-            "messages": [
-                {"role": "user", "content": prompt},
-                {"role": "assistant", "content": output},
-            ],
-            "shots": [str(d["id"]) + "_" + d["source"] for d in shots]
+            "messages": messages,
         }
         unified_data.append(unified_instance)
 
@@ -229,6 +252,4 @@ if __name__ == "__main__":
     )
     out_file.close()
     print("total_number:", len(unified_data))
-    print("avg_x:",avg_x/len(unified_data))
-    print("avg_y:",avg_y/len(unified_data))
-    print("avg_shot:",shot_cnt/len(unified_data))
+    print("avg_word:", total_words/len(unified_data))
