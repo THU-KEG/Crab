@@ -33,6 +33,7 @@ def slice_list(data, n):
 
 def filter(data, args, num_c, unified_data):
     # =============== First Filter: Calculate the similarity between the constraint and the refined instruction. ===============
+    Ban_instance = []
     count_first = 0
     for i, vert in enumerate(tqdm(data)):
         data[i]["overlap"] = 0
@@ -44,7 +45,7 @@ def filter(data, args, num_c, unified_data):
             try:
                 score = calculate_rouge_l(vert["Aug_instruction"]["Refined_Instruction"], value)
             except:
-                Ban.append(i)
+                Ban_instance.append(i)
                 break
             if score > args.threshold:
                 data[i]["overlap"] += 1
@@ -85,6 +86,8 @@ def filter(data, args, num_c, unified_data):
     print("After the second phase, the number of deleted constraints of different types is:",delete_key)
 
     for i, vert in enumerate(data):
+        if i in Ban_instance:
+            continue
         num_c += len(vert["Aug_instruction"]["Additional_Instruction"])
         unified_data.append(copy.deepcopy(vert))
     
