@@ -140,7 +140,7 @@ if __name__ == "__main__":
     
     weighted = dict()
     for k, v in constraint_num.items():
-        weighted[k] = max((len(data) - v) / len(data) , 0.5)
+        weighted[k] = max((v) / len(data) , 0.5)
 
     # ===== DEBUG =====
     out_file = open(os.path.join(output_folder, "INFO_forward_weighted.json"), "w", encoding="utf-8")
