@@ -1,0 +1,705 @@
+[
+    {
+        "id": 36558,
+        "user_id": "465324e6-525f-4fac-b1fe-57760f75ad4b",
+        "assistant_id": "3a053bd4-5087-4c9b-9389-96e1cd3193b1",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Haz una lista de las mejores tarjetas gr\u00e1ficas ordenada de mejor a peor, comparando las caracter\u00edsticas de las mismas."
+            },
+            {
+                "role": "assistant",
+                "content": "Aqu\u00ed te presento una lista de las mejores tarjetas gr\u00e1ficas disponibles actualmente en el mercado, ordenadas de mejor a peor en t\u00e9rminos de caracter\u00edsticas:\n\nNVIDIA GeForce RTX 3090: Es la tarjeta gr\u00e1fica m\u00e1s potente actualmente disponible, con un alto rendimiento en juegos y aplicaciones de edici\u00f3n de video. Tiene una memoria GDDR6X de 24GB y un ancho de banda de memoria de 936 GB/s.\nNVIDIA GeForce RTX 3080 Ti: Es la segunda tarjeta gr\u00e1fica m\u00e1s potente, tambi\u00e9n con un alto rendimiento en juegos y edici\u00f3n de video. Cuenta con una memoria GDDR6X de 12GB y un ancho de banda de memoria de 912 GB/s.\nAMD Radeon RX 6900 XT: Es una tarjeta gr\u00e1fica potente que ofrece un buen rendimiento en juegos y aplicaciones de edici\u00f3n de video. Tiene una memoria GDDR6 de 16GB y un ancho de banda de memoria de 512 GB/s.\nNVIDIA GeForce RTX 3080: Es una tarjeta gr\u00e1fica de alto rendimiento que ofrece una buena experiencia de juego y edici\u00f3n de video. Tiene una memoria GDDR6X de 10GB y un ancho de banda de memoria de 760 GB/s.\nAMD Radeon RX 6800 XT: Es una tarjeta gr\u00e1fica de alta gama que ofrece un buen rendimiento en juegos y aplicaciones de edici\u00f3n de video. Tiene una memoria GDDR6 de 16GB y un ancho de banda de memoria de 512 GB/s.\nNVIDIA GeForce RTX 3070 Ti: Es una tarjeta gr\u00e1fica de alto rendimiento que ofrece una buena experiencia de juego y edici\u00f3n de video. Tiene una memoria GDDR6X de 8GB y un ancho de banda de memoria de 608 GB/s.\nAMD Radeon RX 6800: Es una tarjeta gr\u00e1fica de gama alta que ofrece un buen rendimiento en juegos y aplicaciones de edici\u00f3n de video. Tiene una memoria GDDR6 de 16GB y un ancho de banda de memoria de 512 GB/s.\nNVIDIA GeForce RTX 3060 Ti: Es una tarjeta gr\u00e1fica de gama media-alta que ofrece un buen rendimiento en juegos y edici\u00f3n de video. Tiene una memoria GDDR6 de 8GB y un ancho de banda de memoria de 448 GB/s.\nNVIDIA GeForce RTX 3060: Es una tarjeta gr\u00e1fica de gama media que ofrece un buen rendimiento en juegos y aplicaciones de edici\u00f3n de video. Tiene una memoria GDDR6 de 12GB y un ancho de banda de memoria de 360 GB/s.\nAMD Radeon RX 6700 XT: Es una tarjeta gr\u00e1fica de gama media que ofrece un buen rendimiento en juegos y aplicaciones de edici\u00f3n de video. Tiene una memoria GDDR6 de 12GB y un ancho de banda de memoria de 384 GB/s.\nEs importante destacar que la mejor tarjeta gr\u00e1fica para ti depender\u00e1 de tus necesidades y presupuesto espec\u00edficos."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Haz una lista de las mejores tarjetas gr\u00e1ficas disponibles actualmente en el mercado, ordenadas de mejor a peor en t\u00e9rminos de caracter\u00edsticas, considerando rendimiento en juegos y aplicaciones de edici\u00f3n de video, memoria y ancho de banda de memoria.",
+            "Additional_Instruction": {
+                "Digit": "Provide an answer that is roughly 470 words.",
+                "Sentence": "Each sentence is to contain no more than 30 words.",
+                "Word": "Ensure a lower limit of 15 characters for each word in the answer.",
+                "Keyword": "To provide a comprehensive answer, make sure to weave in the following keywords: \"NVIDIA GeForce RTX\", \"tarjeta gr\u00e1fica\", \"memoria\".",
+                "Desired_Writing_Style": "Formal and informative, with a focus on technical specifications and comparisons.",
+                "Semantic_elements": "The main theme is to provide a comprehensive ranking of graphics cards, highlighting their features and performance.",
+                "Morphological_Constraints": "Avoid using overly promotional language and refrain from including prices, release dates, or detailed product specifications.",
+                "Multi-lingual_Constraints": "The response should be written in Spanish, using technical terms and jargon specific to the field of computer hardware.",
+                "Specific_Formatting_Requirements": "Use a numbered list to present the graphics cards, with each entry including the model name, memory, and bandwidth.",
+                "Target_Audience": "The response is intended for individuals with a basic understanding of computer hardware, seeking to compare and choose a graphics card.",
+                "Technical_Terminology": "Use precise technical terms, such as GDDR6X, ancho de banda de memoria, and rendimiento en juegos, to describe the graphics cards' features.",
+                "Conclusion_Requirements": "The response should mention the importance of considering individual needs and budget when choosing a graphics card.",
+                "Hierarchical_Instructions": "Prioritize the list of graphics cards by their performance, with the most powerful at the top.",
+                "Specific_Sentence": "The first sentence should be 'Aqu\u00ed te presento una lista de las mejores tarjetas gr\u00e1ficas disponibles actualmente en el mercado, ordenadas de mejor a peor en t\u00e9rminos de caracter\u00edsticas:'",
+                "Item_Listing_Details": "Use a colon (:) to separate the graphics card model from its description, and list each item on a new line."
+            }
+        },
+        "cnt_id": 0,
+        "source": "oasst2",
+        "overlap": 1
+    },
+    {
+        "id": 127985,
+        "user_id": "f31ecbda-874c-4e96-bb29-6fc3cb7fa77a",
+        "assistant_id": "b01b9878-0306-48e1-8103-8dc70bdd863c",
+        "messages": [
+            {
+                "role": "user",
+                "content": "For having a healthy lifestile, it is important to do some physical exercise, eat healthy and have a stable and supportive social environment. In addition, intermittent fasting is considered crucial for health, partly because of its capacity to boost a process called autophagy. How does autophagy contribute to a healthy lifestyle?"
+            },
+            {
+                "role": "assistant",
+                "content": "Autophagy is a natural process that occurs in the body where cells break down and recycle damaged proteins and other cellular waste. This process helps to clear out damaged cells and promote cellular renewal, which can contribute to overall health and wellness.\n\nStudies have shown that autophagy can have a number of health benefits, including:\n\nImproved immune function: Autophagy helps to clear out damaged cells and cellular waste, which can improve the body's ability to fight off infections and disease.\n\nReduced inflammation: Chronic inflammation is a major contributor to many health problems, including heart disease and cancer. Autophagy has been shown to reduce inflammation and help protect against these conditions.\n\nBetter insulin sensitivity: Autophagy has been shown to improve insulin sensitivity, which can help regulate blood sugar levels and reduce the risk of developing type 2 diabetes.\n\nProtection against neurodegenerative disorders: Autophagy has been shown to help protect against conditions like Alzheimer's and Parkinson's disease by clearing out damaged cells in the brain.\n\nIntermittent fasting is thought to promote autophagy by forcing the body to use stored energy and breaking down cellular waste, which can help to clean out the body and promote cellular renewal. By incorporating intermittent fasting into a healthy lifestyle, individuals may be able to reap the benefits of increased autophagy and improved overall health.\n\nIt's important to note that more research is needed to fully understand the benefits of autophagy and how it relates to a healthy lifestyle. It's always best to consult with a healthcare professional before making any changes to your diet or exercise routine."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "For maintaining a healthy lifestyle, it is essential to engage in regular physical exercise, consume a balanced diet, and have a stable and supportive social environment. In addition, incorporating intermittent fasting into your routine is considered crucial for health, partly because of its capacity to stimulate autophagy, a natural process that promotes cellular renewal and overall well-being. How does autophagy contribute to a healthy lifestyle?",
+            "Additional_Instruction": {
+                "Digit": "Answer with around 280 words.",
+                "Sentence": "Each sentence is to contain no more than 35 words.",
+                "Word": "Words should hold at least 20 characters in any answer.",
+                "Keyword": "Include the following keywords in your response: \"recycle damaged proteins\", \"damaged cells\", \"cellular waste\".",
+                "Desired_Writing_Style": "Formal and informative, with a focus on conveying scientific information in an accessible manner.",
+                "Semantic_elements": "The response should focus on explaining the concept of autophagy and its benefits for overall health and wellness.",
+                "Morphological_Constraints": "Avoid using technical terms that may be unfamiliar to non-experts, unless they are properly explained or defined.",
+                "Additional_Context": "The response should assume a general audience with some basic knowledge of health and wellness, but no specialized expertise in biology or medicine.",
+                "Tone_and_Perspective": "Objective and neutral, presenting information in a clear and unbiased manner.",
+                "Specific_Topics_to_Cover": "The response must mention at least three benefits of autophagy.",
+                "Key_Concepts_to_Emphasize": "The response should discuss the role of intermittent fasting in promoting autophagy and its potential impact on overall health and wellness.",
+                "Format_and_Structure": "The response should be divided into clear paragraphs, with each paragraph focusing on a specific aspect of autophagy and its benefits.",
+                "Word_Choice_and_Tone": "Use precise and technical vocabulary when necessary, but also incorporate accessible language to facilitate understanding.",
+                " Hierarchical_Instructions": "The response should explain autophagy, its benefits, and its promotion through intermittent fasting, and conclude with a note on further research.",
+                "Specific_Sentence": "Begin the response with a sentence defining autophagy and its natural occurrence in the body."
+            }
+        },
+        "cnt_id": 1,
+        "source": "oasst2",
+        "overlap": 0
+    },
+    {
+        "id": 35298,
+        "user_id": "43adff44-270a-4006-b301-02042ce98554",
+        "assistant_id": "aae62bd7-1601-4b02-9194-7f231bb74533",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Describe the Bellamy Salute."
+            },
+            {
+                "role": "assistant",
+                "content": "The Bellamy salute is a palm-out salute created by James B. Upham as the gesture that was to accompany the American Pledge of Allegiance, whose text had been written by Francis Bellamy. It was also known as the \"flag salute\" during the period when it was used with the Pledge of Allegiance.\n\nPerformed as described in Bellamy\u2019s instructions published in The Youth\u2019s Companion, the Bellamy salute was first demonstrated on October 12, 1892, in honor of the National School Celebration of Columbus Day.\n\n> At a signal from the Principal the pupils, in ordered ranks, hands to the side, face the Flag. Another signal is given; every pupil gives the flag the military salute \u2013 right hand lifted, palm downward, to align with the forehead and close to it. Standing thus, all repeat together, slowly, \u201cI pledge allegiance to my Flag and the Republic for which it stands; one Nation indivisible, with Liberty and Justice for all.\u201d At the words, \u201cto my Flag,\u201d the right hand is extended gracefully, palm upward, toward the Flag, and remains in this gesture till the end of the affirmation; whereupon all hands immediately drop to the side.\n\nDuring the 1920s and 1930s, Italian fascists and Nazi Germans adopted a salute which was very similar. This resulted in controversy over the use of the Bellamy salute in the United States. It was officially replaced by the hand-over-heart salute when Congress amended the Flag Code on December 22, 1942."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Describe the Bellamy salute, a historical palm-out gesture created by James B. Upham to accompany the American Pledge of Allegiance, including its origins, performance, and eventual replacement.",
+            "Additional_Instruction": {
+                "Digit": "Your response should be no more than 310 words long.",
+                "Sentence": "Confine word counts to 80 per sentence.",
+                "Word": "Each word within the answer requires a minimum of 15 characters.",
+                "Keyword": "To enhance the quality of your response, don't forget to use the keywords \"James B. Upham\", \"Francis Bellamy\", \"American Pledge\" throughout.",
+                "Desired_Writing_Style": "Formal and informative tone, suitable for an educational or historical context.",
+                "Semantic_elements": "Focus on the origins, description, and historical significance of the Bellamy salute.",
+                "Morphological_Constraints": "Avoid using colloquial language and refrain from including personal opinions or biases.",
+                "Specificity_Constraints": "Include details about the creator, date of introduction, and eventual replacement of the Bellamy salute.",
+                "Contextual_Constraints": "Emphasize the historical context of the salute's adoption and controversy surrounding its similarity to fascist and Nazi salutes.",
+                "Format_Constraints": "Organize the response into clear paragraphs, with each paragraph focusing on a specific aspect of the Bellamy salute.",
+                " Hierarchical_Instructions": "Prioritize the description of the Bellamy salute's origin and its performance, followed by its controversy and replacement.",
+                "Paragraphs_Constraints": "The response should consist of three paragraphs with a clear separation between each paragraph, which can be a blank line, a line break, or a blockquote.",
+                "Specific_Sentence": "The Bellamy salute is a palm-out salute created by James B. Upham as the gesture that was to accompany the American Pledge of Allegiance, whose text had been written by Francis Bellamy."
+            }
+        },
+        "cnt_id": 2,
+        "source": "oasst2",
+        "overlap": 0
+    },
+    {
+        "id": 78338,
+        "user_id": "944d5fa6-d17f-44b3-be79-cf2734e2d250",
+        "assistant_id": "8640760a-75d7-46ae-9ee0-f19116911497",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Cu\u00e9ntame los datos m\u00e1s relevantes de la vida de Albert Einstein."
+            },
+            {
+                "role": "assistant",
+                "content": "Albert Einstein fue un f\u00edsico te\u00f3rico alem\u00e1n que naci\u00f3 en 1879 y es considerado uno de los cient\u00edficos m\u00e1s importantes del siglo XX. Es famoso por sus teor\u00edas de la relatividad y su trabajo sobre el efecto fotoel\u00e9ctrico, que le vali\u00f3 el Premio Nobel de F\u00edsica en 1921. Adem\u00e1s, su peculiar peinado y su amor por las camisas sin corbata lo han convertido en una figura ic\u00f3nica de la cultura popular.\n\nA continuaci\u00f3n se presentan algunos de los datos m\u00e1s relevantes de su vida:\n\n    Einstein naci\u00f3 en Ulm, Alemania en 1879 y creci\u00f3 en Munich.\n\n    Se gradu\u00f3 en la Escuela Polit\u00e9cnica de Zurich en 1900.\n\n    En 1905, a la edad de 26 a\u00f1os, Einstein public\u00f3 cuatro art\u00edculos que sentaron las bases de la f\u00edsica moderna. Estos art\u00edculos incluyeron la teor\u00eda de la relatividad especial, que revolucion\u00f3 la forma en que se entend\u00eda el tiempo y el espacio.\n\n    En 1915, Einstein complet\u00f3 su teor\u00eda de la relatividad general, que extendi\u00f3 la teor\u00eda especial y describi\u00f3 la gravedad como una curvatura del espacio-tiempo.\n\n    En 1921, recibi\u00f3 el Premio Nobel de F\u00edsica por su trabajo sobre el efecto fotoel\u00e9ctrico, que fue fundamental para el desarrollo de la teor\u00eda cu\u00e1ntica."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Cu\u00e9ntame los datos m\u00e1s relevantes de la vida de Albert Einstein, incluyendo su nacimiento, educaci\u00f3n, logros cient\u00edficos y reconocimientos m\u00e1s destacados.",
+            "Additional_Instruction": {
+                "Digit": "Provide an response containing at least 190 words.",
+                "Sentence": "Maintain a word limit of 30 per sentence.",
+                "Word": "The words of each answer must meet a minimum length of 15 characters.",
+                "Desired_Writing_Style": "Write in a formal, informative, and engaging tone, suitable for an educational article.",
+                "Semantic_elements": "Focus on highlighting Einstein's key achievements, theories, and contributions to physics.",
+                "Morphological_Constraints": "Avoid using overly technical jargon and refrain from including excessive dates or trivial details.",
+                "Multi-lingual_Constraints": "Write the response in Spanish, using proper grammar and spelling conventions.",
+                " Hierarchical_Instructions": "The response should provide a balanced overview of Einstein's scientific contributions and personal life.",
+                "Specific_Sentence": "The response should introduce Einstein in the first sentence."
+            }
+        },
+        "cnt_id": 3,
+        "source": "oasst2",
+        "overlap": 0
+    },
+    {
+        "id": 39457,
+        "user_id": "4c38a0cd-79e1-416d-8a77-1e95d274df2b",
+        "assistant_id": "8fd97d4e-cdb6-4f9f-93c8-4c79a0527946",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Voc\u00ea pode me contar uma piada?"
+            },
+            {
+                "role": "assistant",
+                "content": "Claro! aqui vai uma:\n\nA velhinha vai ao m\u00e9dico e diz:\n\n- Doutor, eu tenho este problema com gases, mas realmente isso n\u00e3o me aborrece muito. Eles n\u00e3o cheiram e sempre s\u00e3o silenciosos. Vou lhe dar um exemplo. Desde que entrei aqui, no seu consult\u00f3rio, eu soltei uns 5 peidos, pelo menos. Aposto que o senhor n\u00e3o percebeu e nem sentiu. S\u00e3o silenciosos e sem cheiro...\n\nO m\u00e9dico aconselha:\n\n- Tome estas pilulas tr\u00eas vezes ao dia e volte na semana que vem.\n\nNa semana seguinte, a senhora regressa:\n\n- Doutor -diz ela-, n\u00e3o sei que porcaria o senhor me deu, mas agora meus gases, embora silenciosos, fedem terrivelmente.\n\nEnt\u00e3o, o m\u00e9dico fala:\n\n- Bom, agora que curamos a sua sinusite, vamos cuidar da sua surdez!!"
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Voc\u00ea pode me contar uma piada em portugu\u00eas, preferencialmente com um tema de consulta m\u00e9dica e um final surpreendente?",
+            "Additional_Instruction": {
+                "Digit": "Provide an answer that is roughly 150 words.",
+                "Sentence": "Allow no more than 25 words in each sentence.",
+                "Word": "No word in the answer should fall below 15 characters in length.",
+                "Punctuation": "Avoid using question marks in your response.",
+                "Desired_Writing_Style": "Write in a humorous and lighthearted tone, using playful language and witty dialogue.",
+                "Semantic_elements": "The response should revolve around a joke or pun, with a clear setup and punchline.",
+                "Multi-lingual_Constraints": "The response should be written in Portuguese, using correct grammar and spelling.",
+                " Hierarchical_Instructions": "Prioritize the joke setup, followed by the dialogue, and conclude with the punchline.",
+                "Specific_Sentence": "The joke should start with 'Claro! aqui vai uma:' and end with the punchline.",
+                "Item_Listing_Details": "Use hyphens (-) to list the doctor's advice and the old lady's responses."
+            }
+        },
+        "cnt_id": 4,
+        "source": "oasst2",
+        "overlap": 0
+    },
+    {
+        "id": 603,
+        "score": 9.0,
+        "source": "alpaca",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Submit a description of a important event in your life."
+            },
+            {
+                "role": "assistant",
+                "content": "An important event in my life was when I graduated from university. After four years of hard work, I was filled with pride and a sense of accomplishment as I stepped onto the stage to receive my degree. It was the result of dedication and perseverance, and it showed me that nothing is impossible if you put your mind to it."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Submit a vivid and reflective description of a pivotal, personally significant event in your life, highlighting your emotions and the lessons learned from the experience.",
+            "Additional_Instruction": {
+                "Digit": "Aim for approximately 60 words in your answer.",
+                "Paragraph": "Each paragraph must be limited to 5 sentences.",
+                "Sentence": "Keep each sentence under 30 words.",
+                "Word": "Words should hold at least 15 characters in any answer.",
+                "Keyword": "Ensure that your response features the keywords \"graduated from university\", \"important event\" to highlight the main points and improve comprehensibility.",
+                "Punctuation": "Your response should not contain question marks.",
+                "Desired_Writing_Style": "Write in a reflective and introspective tone, conveying a sense of personal growth and achievement.",
+                "Semantic_elements": "Focus on the emotional significance and impact of the event on personal development and self-perception.",
+                "Morphological_Constraints": "Avoid using overly formal language and focus on the emotional significance of the event.",
+                " Hierarchical_Instructions": "The response should describe the event itself, and then elaborate on its significance and impact.",
+                "Paragraphs_Constraints": "The response should consist of a single paragraph with no specific spacing or separators required.",
+                "Specific_Sentence": "Begin the description with a clear statement of the event, such as 'An important event in my life was...' "
+            }
+        },
+        "cnt_id": 0,
+        "overlap": 0
+    },
+    {
+        "id": 50834,
+        "score": 9.0,
+        "source": "alpaca",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Provide a value proposition for a software product."
+            },
+            {
+                "role": "assistant",
+                "content": "A value proposition for a software product could be: Our software offers an all-in-one solution that streamlines your daily tasks and increases productivity. Our intuitive interface and innovative features save you time and reduce frustration, allowing you to focus on what matters most - growing your business. With our cloud-based technology, you can access your data from anywhere, at any time, ensuring that you never miss an opportunity. In short, our software maximizes efficiency, enhances collaboration, and drives success, making it an indispensable tool for any modern business."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Provide a concise and compelling value proposition for a software product, highlighting its key benefits, unique features, and competitive advantages that appeal to modern businesses, and structure it in a clear and persuasive narrative.",
+            "Additional_Instruction": {
+                "Digit": "Limit the text length to no fewer than 90 and no more than 130 words to maintain conciseness.",
+                "Paragraph": "Allow no more than 4 sentences in each paragraph.",
+                "Sentence": "Cap the word count at 30 per sentence.",
+                "Word": "Each word in the response must consist of at least 15 characters.",
+                "Keyword": "To enhance the quality of your response, don't forget to use the keywords \"solution that streamlines\", \"increases productivity\", \"streamlines your daily\" throughout.",
+                "Punctuation": "Ensure that your response does not contain any exclamation marks.",
+                "Desired_Writing_Style": "Write in a professional and persuasive tone, using a conversational yet formal language.",
+                "Semantic_elements": "Focus on highlighting the software's benefits, features, and value-added services for businesses.",
+                "Morphological_Constraints": "Avoid using overly technical jargon and refrain from including more than two buzzwords or clich\u00e9s.",
+                "Specific_Keywords": "Incorporate keywords like 'productivity', 'efficiency', 'collaboration', and 'cloud-based technology' to enhance relevance.",
+                "Target_Audience": "Direct the response towards entrepreneurs, small business owners, and decision-makers in various industries.",
+                "Response_Length": "Aim for a response between 75-100 words, with 3-4 concise sentences that effectively convey the value proposition.",
+                "Tone_and_Emotional_Appeal": "Convey a sense of confidence, innovation, and reliability, while emphasizing the software's ability to simplify and empower businesses.",
+                " Hierarchical_Instructions": "Prioritize highlighting the software's benefits and features in a clear, concise manner.",
+                "Specific_Sentence": "The first sentence should begin with 'A value proposition for a software product could be:'"
+            }
+        },
+        "cnt_id": 1,
+        "overlap": 0
+    },
+    {
+        "id": 45467,
+        "score": 9.0,
+        "source": "alpaca",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Given a simple scenario, you need to identify the different characters in the situation.\n\n### Input:\nA family of four was sitting together at the dinner table."
+            },
+            {
+                "role": "assistant",
+                "content": "The different characters in this scenario are the four members of the family seated at the dinner table."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Given a brief narrative scenario, identify and specify the distinct individuals involved in the situation, excluding any non-human entities.\n\n### Input:\nA family of four was sitting together at the dinner table.",
+            "Additional_Instruction": {
+                "Digit": "Answer with at most 30 words.",
+                "Sentence": "Restrict each sentence to 20 words maximum.",
+                "Word": "Each word in the answer must have at least 10 characters.",
+                "Keyword": "Your response should feature the terms \"dinner table\", \"family seated\" to cover all crucial points effectively.",
+                "Punctuation": "Could you make sure that your response is free of any commas?",
+                "Desired_Writing_Style": "The response should be written in a clear and concise manner, avoiding ambiguity.",
+                "Semantic_elements": "The main theme of the response is to identify the characters present in the given scenario.",
+                "Morphological_Constraints": "Avoid using overly complex sentences and minimize descriptive phrases.",
+                "Paragraphs_Constraints": "The response should consist of a single paragraph with no specific spacing or separators.",
+                "Specific_Sentence": "The response should begin with 'The different characters in this scenario are'."
+            }
+        },
+        "cnt_id": 2,
+        "overlap": 0
+    },
+    {
+        "id": 16151,
+        "score": 9.0,
+        "source": "alpaca",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Describe the elements of the Democratic Party's platform."
+            },
+            {
+                "role": "assistant",
+                "content": "The Democratic Party's platform is based on the principles of progressivism and social democracy and focuses on promoting social, economic, and political justice for all Americans. Some of the key elements of the party's platform include:\n\n1. Economic policy: The Democratic Party aims to create inclusive and equitable economic growth by raising the minimum wage, supporting workers' rights and unions, investing in infrastructure, and promoting trade policies that benefit American workers.\n\n2. Health care: Democrats believe that access to affordable healthcare is a fundamental right for all Americans. They support expanding healthcare coverage through the Affordable Care Act, protecting Medicare and Medicaid, and lowering the cost of prescription drugs.\n\n3. Education: The party aims to provide affordable and accessible education for all Americans, from early childhood education to college and beyond. They support investments in public schools, making college education affordable, and providing student loan relief.\n\n4. Climate change: Democrats believe that climate change is an urgent threat that must be addressed through aggressive action. They support initiatives to reduce carbon emissions, increase investments in renewable energy, and implement climate-friendly policies.\n\n5. Social justice: The Democratic Party is committed to promoting social justice and reducing inequality. They support civil rights, women's rights, LGBTQ rights, and voting rights, and aim to reform the criminal justice system and end systemic racism.\n\n6. Immigration: Democrats believe in comprehensive immigration reform that provides a pathway to citizenship for undocumented immigrants, protects the rights of refugees and asylum seekers, and keeps families together.\n\nThese are some of the main elements of the Democratic Party's platform, although there are many other issues that the party addresses, including gun control, foreign policy, and campaign finance reform, among others."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Describe the core principles and key policy elements of the Democratic Party's platform, including its stance on economic growth, healthcare, education, climate change, social justice, and immigration, highlighting its commitment to promoting equality, justice, and opportunity for all Americans.",
+            "Additional_Instruction": {
+                "Digit": "Answer with at least 310 words.",
+                "Sentence": "Each sentence must be confined to 40 words or fewer.",
+                "Word": "The words of each answer must meet a minimum length of 20 characters.",
+                "Desired_Writing_Style": "Formal and informative tone, avoiding bias and emotional language.",
+                "Semantic_elements": "The response should focus on the core principles and policies of the Democratic Party's platform.",
+                "Morphological_Constraints": "Avoid using overly technical jargon and refrain from listing specific party platforms or policy details.",
+                "Specificity_Constraints": "Provide specific policy details and examples to support each element of the platform.",
+                "Length_Constraints": "The response should be approximately 250-300 words, with 6 key elements of the platform.",
+                "Format_Constraints": "Use a numbered list to organize the elements of the platform, with each element consisting of 2-3 sentences.",
+                "Objectivity_Constraints": "Present the information in a descriptive manner, avoiding language that implies endorsement or promotion.",
+                "Relevance_Constraints": "Ensure that each element of the platform is relevant to the party's overall goals and values.",
+                " Hierarchical_Instructions": "Prioritize the description of economic policy, followed by healthcare, education, and then other elements.",
+                "Paragraphs_Constraints": "The response should consist of 6-7 paragraphs, with clear separation between each element using numbered points or headings.",
+                "Specific_Sentence": "Begin the response with a sentence introducing the Democratic Party's platform and its core principles.",
+                "Item_Listing_Details": "Use numbered listing (1., 2., 3., etc.) for each element, with a brief description of each."
+            }
+        },
+        "cnt_id": 3,
+        "overlap": 0
+    },
+    {
+        "id": 38070,
+        "score": 9.0,
+        "source": "alpaca",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Given the price of a product and the list of available discounts, calculate the final price after discounts.\n\n### Input:\nPrice: $100\nDiscounts: 20% off, 10% of the remaining"
+            },
+            {
+                "role": "assistant",
+                "content": "The original price of the product is $100.\n\nThe first discount is 20% off, which means a reduction of $20 (20% of $100).\nThe price after the first discount is $80 ($100 - $20).\n\nThe second discount is 10% off the remaining, which means a reduction of $8 (10% of $80).\nThe price after the second discount is $72 ($80 - $8).\n\nTherefore, the final price after discounts is $72."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Given the initial price of a product and a list of sequential discounts, calculate the final price by applying each discount to the remaining amount, and provide a step-by-step breakdown of the discount application process.\n\n### Input:\nPrice: $100\nDiscounts: 20% off, 10% of the remaining",
+            "Additional_Instruction": {
+                "Digit": "Ensure your answer does not exceed 110 words.",
+                "Sentence": "Keep each sentence under 25 words.",
+                "Word": "The words of each answer must meet a minimum length of 10 characters.",
+                "Desired_Writing_Style": "Use a clear and concise explanatory tone, with a focus on step-by-step calculations.",
+                "Semantic_elements": "The response should explicitly state the original price, each discount, and the final price after discounts.",
+                "Morphological_Constraints": "Avoid using complex mathematical notation or formulas, and refrain from using abbreviations unless they are widely recognized and commonly used in the conresponse.",
+                "Additional_Context": "Assume the reader has basic knowledge of percentage calculations, but provide explanations for each step.",
+                "Specific_Vocabulary": "Use precise terms such as 'original price', 'remaining', and 'final price' to maintain clarity.",
+                "Format_Requirements": "Use a structured format with clear headings or subheadings to separate each discount calculation.",
+                "Length_Constraints": "The response should be approximately 100-150 words, with 4-6 sentences in total.",
+                " Hierarchical_Instructions": "Prioritize calculations in the order of discounts provided, with clear explanations for each step.",
+                "Paragraphs_Constraints": "The response should consist of four paragraphs, with a blank line separating each paragraph.",
+                "Specific_Sentence": "The final sentence should start with 'Therefore, the final price after discounts is'.",
+                "Item_Listing_Details": "The response must include a clear explanation of each discount, including the discount percentage and resulting price reduction."
+            }
+        },
+        "cnt_id": 4,
+        "overlap": 0
+    },
+    {
+        "id": 28689,
+        "idx": "alpaca_60599",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Can you determine whether the given passage is a personal or informative essay based on the number of unique letters used in the passage, while also considering the average sentence length and the distribution of sentence structures? Use the table displaying the number of times each letter appears in the passage to solve the puzzle, and provide an explanation for your answer that accounts for all three factors."
+            },
+            {
+                "role": "assistant",
+                "content": "As an AI assistant, I can analyze the given passage and determine whether it is a personal or informative essay based on the number of unique letters used in the passage, average sentence length, and distribution of sentence structures. However, I cannot provide a table displaying the number of times each letter appears in the passage without the given passage.\nGenerally, a personal essay tends to be more subjective and emotional, while an informative essay is more objective and factual. Therefore, a personal essay may have a more varied sentence structure and shorter sentence length, while an informative essay may have a more consistent sentence structure and longer sentence length.\nThe number of unique letters used in a passage can also provide some insight into whether it is personal or informative. A personal essay may have a higher number of unique letters, as the author may use more descriptive and expressive language. An informative essay may have a lower number of unique letters, as the author may focus more on conveying information than on using creative language.\nTaking all three factors into account, if a passage has a high number of unique letters, a varied sentence structure, and shorter sentence length, it is more likely to be a personal essay. On the other hand, if a passage has a lower number of unique letters, a consistent sentence structure, and longer sentence length, it is more likely to be an informative essay. However, it is important to note that these factors are not definitive and should be considered in conjunction with the content and purpose of the essay."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Can you determine whether the given passage is a personal or informative essay based on the number of unique letters used in the passage, while also considering the average sentence length and the distribution of sentence structures, taking into account the passage's tone, purpose, and content, and provide an explanation for your answer that accounts for all three factors and their interplay.",
+            "Additional_Instruction": {
+                "Digit": "Answer with at most 320 words.",
+                "Paragraph": "Hold each paragraph to a strict maximum of 3 sentences.",
+                "Sentence": "No sentence should exceed 45 words in length.",
+                "Word": "Each word of the answer should be at least 15 characters long.",
+                "Keyword": "Include key terms such as \"number of unique\", \"unique letters\", \"informative essay\" in your response.",
+                "Desired_Writing_Style": "The response should be written in an analytical and informative tone, with a formal academic language.",
+                "Semantic_elements": "The main theme of the response is to determine the type of essay based on linguistic features.",
+                "Morphological_Constraints": "Avoid using colloquial expressions and refrain from using a conversational tone, but allow for the use of contractions for clarity and readability.",
+                "Relevance_Constraints": "The response should only consider the provided factors (number of unique letters, average sentence length, and distribution of sentence structures) and avoid introducing any additional information or explanations.",
+                "Format_Constraints": "The response should be written in a clear and organized manner, with each point building upon the previous one.",
+                "Length_Constraints": "The response should be approximately 250-300 words in length, with concise and focused paragraphs.",
+                "Objectivity_Constraints": "The response should maintain objectivity and avoid making value judgments about the essay type.",
+                " Hierarchical_Instructions": "The response should provide a clear explanation of how to determine the type of essay based on unique letters, sentence length, and sentence structure.",
+                "Specific_Sentence": "Begin the response with 'As an AI assistant, I can analyze the given passage and determine whether it is a personal or informative essay based on the number of unique letters used in the passage, average sentence length, and distribution of sentence structures.'"
+            }
+        },
+        "cnt_id": 0,
+        "source": "wizardLM",
+        "overlap": 0
+    },
+    {
+        "id": 53409,
+        "idx": "alpaca_48645",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Imagine you are creating an online feedback system for a company. You want to ensure that the feedback collected is not only comprehensive but also accurate in representing customer sentiment. You decide to incorporate a sentiment analysis feature using natural language processing (NLP) techniques. However, you want to ensure that the system is not easily manipulated by customers who might intentionally write fake positive or negative feedback.\nHow would you design the feedback form to minimize the impact of fake feedback? What additional measures can you incorporate to improve the accuracy of the sentiment analysis?"
+            },
+            {
+                "role": "assistant",
+                "content": "To minimize the impact of fake feedback, the following measures can be incorporated:\n1. Verification process: Introduce a verification process to ensure that the feedback is coming from a genuine customer. This can be done by sending a verification email or text message to the customer's registered email or phone number, which they need to confirm before submitting the feedback.\n2. Captcha: Include a captcha in the feedback form to prevent bots and automated scripts from submitting fake feedback.\n3. Time limit: Set a time limit for submitting feedback. This will prevent customers from submitting multiple feedback entries over an extended period of time.\n4. Feedback guidelines: Provide clear guidelines for the type of feedback that is acceptable. This will help customers understand what kind of feedback is expected and minimize the chances of fake feedback.\nTo improve the accuracy of sentiment analysis, the following measures can be incorporated:\n1. Use of multiple algorithms: Use multiple algorithms for sentiment analysis to ensure that the results are accurate and reliable.\n2. Contextual analysis: Incorporate contextual analysis to understand the context in which the feedback was given. This will help in understanding the sentiment more accurately.\n3. Human review: Incorporate human review to validate the sentiment analysis results. This will help in identifying any errors or biases in the sentiment analysis.\n4. Feedback categorization: Categorize feedback into different categories such as positive, negative, and neutral. This will help in analyzing feedback more accurately and identifying trends and patterns."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Imagine you are creating an online feedback system for a company, where customers can provide feedback on their recent purchases or interactions with the company. You want to ensure that the feedback collected is not only comprehensive but also accurate in representing customer sentiment, without being easily manipulated by customers who might intentionally write fake positive or negative feedback. How would you design the feedback form to minimize the impact of fake feedback, and what additional measures can you incorporate to improve the accuracy of the sentiment analysis, considering the system will use natural language processing (NLP) techniques?",
+            "Additional_Instruction": {
+                "Digit": "Provide an answer that is roughly 280 words.",
+                "Sentence": "No sentence should exceed 35 words in length.",
+                "Word": "Maintain a minimum of 15 characters in each word of the answer.",
+                "Keyword": "Include the keywords \"feedback\" in your answer to make sure all important aspects are addressed.",
+                "Desired_Writing_Style": "Write in a formal and informative tone, using technical language and avoiding colloquialisms.",
+                "Semantic_elements": "Focus on the design of a feedback system that ensures accurate sentiment analysis and minimizes fake feedback.",
+                "Morphological_Constraints": "Avoid using overly technical jargon and aim for a reading ease of 60-70 on the Flesch-Kincaid readability test.",
+                "Specific_Formatting_Requirements": "Use numbered lists to present multiple measures and incorporate concise headings to organize the response.",
+                "Domain_Specific_Terminology": "Use terms related to natural language processing and sentiment analysis, such as 'captcha', 'algorithms', and 'contextual analysis'.",
+                "Length_Constraints": "The response should be approximately 350-400 words, with each measure explained in 2-3 sentences.",
+                "Tone_and_Perspective": "Maintain a neutral tone and use third-person perspective to present the design of the feedback system.",
+                "Key_Term_Inclusion": "Incorporate key terms such as 'sentiment analysis', 'natural language processing', and 'fake feedback' to ensure relevance to the topic.",
+                " Hierarchical_Instructions": "Prioritize measures to minimize fake feedback, followed by measures to improve sentiment analysis accuracy.",
+                "Paragraphs_Constraints": "The response should consist of two paragraphs, with a clear separation between the two sections using a blank line or indentation.",
+                "Specific_Sentence": "The first sentence should begin with 'To minimize the impact of fake feedback, the following measures can be incorporated:'",
+                "Item_Listing_Details": "Use numbered lists (1., 2., 3., etc.) for enumerating measures, with a colon (:) separating the measure from its description."
+            }
+        },
+        "cnt_id": 1,
+        "source": "wizardLM",
+        "overlap": 0
+    },
+    {
+        "id": 128789,
+        "idx": "m70oWS0",
+        "messages": [
+            {
+                "role": "user",
+                "content": "Can you provide the names of three female painters who were under 21 when they produced highly innovative works that expanded the boundaries of traditional art, and whose work achieved significant international recognition despite not being well-known?"
+            },
+            {
+                "role": "assistant",
+                "content": "1. Amrita Sher-Gil (1913-1941): She is often referred to as India's Frida Kahlo and is considered one of the most significant painters of 20th century India. Her paintings were deeply influenced by the traditional Indian styles, as well as Western Modernism. Her most famous works include 'Young Girls', 'Bride's Toilet', and 'Hill Women'.\r\n\r\n2. Marisol Escobar (1930-2016): She was a Venezuelan-American sculptor who became famous in the 1960s for her life-sized, three-dimensional figures made from a combination of materials, including wood, plaster, and paint. Her work was celebrated for its playful and witty commentary on gender roles and the politics of identity. She was a prominent figure in the Pop Art movement and one of few women associated with it.\r\n\r\n3. Yayoi Kusama (born 1929): She is a Japanese contemporary artist who is known for her avant-garde work in a variety of media, including painting, sculpture, and installation art. Kusama's work is characterized by its use of bright colors, repetition, and bold patterns. She is best known for her immersive installations, which often involve the use of mirrors to create an illusion of infinity. Despite facing discrimination as a female artist, Kusama has gained international recognition and is considered one of the most influential artists of the 20th century."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "Can you provide the names of three female painters from diverse cultural backgrounds who were under 21 when they produced highly innovative works that expanded the boundaries of traditional art, and whose work achieved significant international recognition despite not being well-known, including details about their styles, influences, and notable works?",
+            "Additional_Instruction": {
+                "Digit": "Provide an answer that is roughly 250 words.",
+                "Sentence": "Maintain a word limit of 40 per sentence.",
+                "Word": "Words in the answer should not be shorter than 20 characters.",
+                "Morphological_Constraints": "Avoid using overly technical art jargon and refrain from including excessive biographical details.",
+                "Specific_Formatting_Requirements": "List the artists in a numbered format, with each artist's name followed by a brief description.",
+                "Length_Constraints": "Ensure each artist's description is approximately 40-80 words in length.",
+                "Domain_Knowledge_Requirements": "Demonstrate knowledge of art historical movements, such as Modernism and Pop Art, and their relevance to the artists.",
+                "Tone_and_Perspective": "Maintain a neutral, objective tone and avoid inserting personal opinions or biases.",
+                "Key_Term_Inclusion": "Incorporate relevant art historical terms, such as 'avant-garde' and 'immersive installations', to enhance the response's accuracy.",
+                "Paragraphs_Constraints": "The response should consist of three paragraphs, each describing a different female painter.",
+                "Item_Listing_Details": "Use numbers (1., 2., 3., etc.) to list the painters, followed by their birth and death years in parentheses."
+            }
+        },
+        "cnt_id": 2,
+        "source": "wizardLM",
+        "overlap": 0
+    },
+    {
+        "id": 127131,
+        "idx": "RKTftEr",
+        "messages": [
+            {
+                "role": "user",
+                "content": "(number of vegetarian + gluten-free food options) x 15 kids \u2264 $500\r\n\r\nAssuming that the catering company offers both vegetarian and gluten-free food options, how many kids can be catered for a budget of $1000? Take into consideration that the cost of the vegetarian and gluten-free options is higher and the budget can be increased accordingly."
+            },
+            {
+                "role": "assistant",
+                "content": "The given equation is:\r\n\r\n(number of vegetarian + gluten-free food options) x 15 kids \u2264 $500\r\n\r\nTo cater for more kids, we need to increase the budget while keeping the number of vegetarian and gluten-free food options constant. \r\n\r\nLet's assume that for a budget of $1000, we can cater for x kids:\r\n\r\n(number of vegetarian + gluten-free food options) x x \u2264 $1000\r\n\r\nAs the cost of the vegetarian and gluten-free options is higher, we can assume that they cost 1.5 times more than regular food options. Therefore, we can assume that the cost of each regular food option is $10 and the cost of each vegetarian or gluten-free food option is $15. \r\n\r\nSo, the number of regular food options can be calculated by subtracting the number of vegetarian and gluten-free food options from the total number of options:\r\n\r\nRegular food options = x - (number of vegetarian + gluten-free food options)\r\n\r\nThe total cost of the catering can be calculated by multiplying the number of each type of food option with its respective cost and adding them up:\r\n\r\nTotal cost = (number of regular food options x $10) + (number of vegetarian and gluten-free options x $15)\r\n\r\nUsing the given equation:\r\n\r\n(number of vegetarian + gluten-free food options) x 15 kids \u2264 $500\r\n\r\nWe can substitute the value of (number of vegetarian + gluten-free food options) from the above equation as:\r\n\r\n(number of vegetarian + gluten-free food options) = $500 / 15 kids\r\n\r\nSubstituting the value of (number of vegetarian + gluten-free food options) in the equation for the total cost:\r\n\r\nTotal cost = (x - $500 / 15 kids) x $10 + ($500 / 15 kids) x $15\r\n\r\nSimplifying this equation gives:\r\n\r\nTotal cost = $10x + $500\r\n\r\nWe want to find the maximum value of x for a total cost of $1000:\r\n\r\n$10x + $500 = $1000\r\n\r\n$10x = $500\r\n\r\nx = 50\r\n\r\nTherefore, for a budget of $1000, we can cater for a maximum of 50 kids."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "'(number of vegetarian + gluten-free food options) x 15 kids \u2264 $500, where each vegetarian and gluten-free option costs $15 and each regular option costs $10. \n\nAssuming the catering company offers both vegetarian and gluten-free food options, how many kids can be catered for a budget of $1000, considering the higher cost of vegetarian and gluten-free options?'",
+            "Additional_Instruction": {
+                "Digit": "The answer must be 410 words or fewer.",
+                "Sentence": "Set a limit of 30 words for each sentence.",
+                "Word": "No word in the answer should fall below 15 characters in length.",
+                "Punctuation": "Please ensure your response is free of any question marks.",
+                "Desired_Writing_Style": "Use a formal and analytical tone, with a focus on step-by-step problem-solving explanations.",
+                "Semantic_elements": "The response should revolve around the theme of catering budget optimization for vegetarian and gluten-free food options.",
+                "Domain_Knowledge_Constraints": "Assume a basic understanding of algebraic equations and mathematical operations, but provide explanations for any complex calculations.",
+                "Format_Constraints": "Use a clear and concise paragraph structure, with each paragraph focusing on a specific step in the problem-solving process.",
+                "Length_Constraints": "The response should be approximately 250-300 words in length, with a maximum of 7-8 paragraphs.",
+                "Tone_and_Perspective_Constraints": "Maintain a neutral tone and third-person perspective throughout the response, avoiding personal opinions or biases.",
+                "Specificity_Constraints": "Clearly state the assumptions about the cost of vegetarian and gluten-free food options before using them in the calculation, and provide explicit calculations for the total cost and maximum number of kids that can be catered.",
+                "Hierarchical_Instructions": "Prioritize calculations and explanations in a logical and step-by-step manner.",
+                "Specific_Sentence": "The given equation is: (number of vegetarian + gluten-free food options) x 15 kids \u2264 $500, placed at the beginning of the response."
+            }
+        },
+        "cnt_id": 3,
+        "source": "wizardLM",
+        "overlap": 0
+    },
+    {
+        "id": 5949,
+        "idx": "pUXCSy6",
+        "messages": [
+            {
+                "role": "user",
+                "content": "How can the application of quantum algorithms in modern-day computing lead to the exploration of the vulnerabilities in RSA encryption technology, and how can the potential for the use of quantum computing power to significantly reduce the time taken for encryption decoding processes to be carried out be addressed?"
+            },
+            {
+                "role": "assistant",
+                "content": "RSA encryption relies on the difficulty of factoring large prime numbers for its security. However, quantum computers have the potential to break the RSA encryption algorithm using Shor's algorithm, which can factor large numbers exponentially faster than classical computers. This means that with the help of quantum computers, an attacker could break RSA encryption and gain access to sensitive information.\n\nTo address this issue, researchers are working on developing quantum-resistant encryption algorithms that cannot be easily broken by quantum computers. These algorithms use mathematical problems that are believed to be difficult to solve even with the help of quantum computers. One such algorithm is the lattice-based encryption algorithm.\n\nAnother approach is to develop post-quantum cryptographic algorithms that are secure against both classical and quantum computers. These algorithms are still under development and testing, but they aim to provide long-term security against attacks from quantum computers.\n\nIn the short term, organizations can implement hybrid encryption schemes that combine classical encryption with quantum-resistant encryption. This will provide a degree of security against attacks from both classical and quantum computers while post-quantum cryptographic algorithms are being developed and tested.\r\n\r\nIn conclusion, the potential of quantum computers to break RSA encryption poses a significant threat to the security of sensitive information. However, researchers are working on developing quantum-resistant and post-quantum cryptographic algorithms to provide long-term security against attacks from quantum computers. In the short term, organizations can implement hybrid encryption schemes to provide a degree of security against quantum attacks while these algorithms are being developed and tested."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "How can the application of quantum algorithms in modern-day computing, specifically Shor's algorithm, lead to the exploration of the vulnerabilities in RSA encryption technology, which relies on the difficulty of factoring large prime numbers, and how can the potential for the use of quantum computing power to significantly reduce the time taken for encryption decoding processes to be carried out be addressed through the development of quantum-resistant and post-quantum cryptographic algorithms?",
+            "Additional_Instruction": {
+                "Digit": "Your response should be no more than 280 words long.",
+                "Sentence": "Keep each sentence under 30 words.",
+                "Word": "Each word in the response must consist of at least 20 characters.",
+                "Keyword": "Include the following keywords in your response: \"RSA encryption\", \"quantum computers\".",
+                "Desired_Writing_Style": "Formal and informative, with a focus on technical accuracy and clarity.",
+                "Semantic_elements": "The main theme is the vulnerability of RSA encryption to quantum algorithms and potential solutions.",
+                "Morphological_Constraints": "Avoid using overly technical jargon, except for domain-specific terms that are necessary for understanding the topic.",
+                "Specific_Topics_to_Cover": "Quantum algorithms, RSA encryption, Shor's algorithm, quantum-resistant encryption, post-quantum cryptographic algorithms, and hybrid encryption schemes.",
+                "Target_Audience": "Technical professionals and researchers in the field of computer science and cryptography.",
+                "Tone_and_Perspective": "Objective and neutral, presenting a balanced view of the issue and potential solutions.",
+                "Specific_Keywords_to_Include": "The response must discuss the relationship between quantum computers, RSA encryption, security, cryptography, and encryption algorithms.",
+                "Format_and_Structure": "Divide the response into clear sections or paragraphs to facilitate easy understanding.",
+                "Length_and_Brevity": "The response should be concise, ideally between 250-350 words.",
+                "Relevance_and_Context": "The response should be relevant to the topic and provide context for the discussion.",
+                " Hierarchical_Instructions": "Prioritize explaining the vulnerability of RSA encryption to quantum computers, followed by addressing the issue with quantum-resistant algorithms.",
+                "Paragraphs_Constraints": "The response should consist of five paragraphs, with a clear separation between each paragraph using a single blank line."
+            }
+        },
+        "cnt_id": 4,
+        "source": "wizardLM",
+        "overlap": 0
+    },
+    {
+        "id": 65176,
+        "source": "orca_chat",
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are an AI assistant. User will you give you a task. Your goal is to complete the task as faithfully as you can. While performing the task think step-by-step and justify your steps.\n\nJennifer Aniston desperate rekindle her relationship ex - boyfriend John Mayer . The former ' Friends actress - who split ' Gravity singer last month - reportedly phoning John every day bid show him what he missing . A source said : Jennifer reached out John first . She had few glasses wine - then decided throw caution wind make first move .\n\nOptions: [+] John wanted her attention .. [+] None of the above choices .. [+] John did n't miss her as much as she missed him .. [+] John had more caution and less wine ..\nQ: Why did John not   reach out to Jennifer first ?"
+            },
+            {
+                "role": "assistant",
+                "content": "Step 1: Analyze the passage for details about John's behavior and feelings.\n\nFrom the passage, it is mentioned that Jennifer reached out to John first after having a few glasses of wine. There is no direct information about why John didn't reach out to Jennifer first.\n\nStep 2: Analyze the options provided to see which one could be the most plausible explanation.\n\nOption 1: John wanted her attention.\n- This option doesn't directly address why John didn't reach out first.\n\nOption 2: None of the above choices.\n- This answer acknowledges that none of the provided answers might be correct, but since we haven't analyzed the rest of the options yet, we cannot choose this answer.\n\nOption 3: John didn't miss her as much as she missed him.\n- This option provides a possible explanation for why John didn't reach out first, as he might not have felt the same level of desire to rekindle the relationship.\n\nOption 4: John had more caution and less wine.\n- This option suggests that John might have had more restraint and didn't feel the same urgency as Jennifer, who decided to throw caution to the wind after having some wine.\n\nStep 3: Select the most plausible explanation from the options provided.\n\nAfter analyzing the options, Option 3 (John didn't miss her as much as she missed him) offers a reasonable explanation for John not reaching out to Jennifer first. This suggests that he might not have felt the need to engage in rekindling the relationship to the same degree as Jennifer.\n\nConclusion: Why did John not reach out to Jennifer first? Based on the passage and the options provided, the most plausible explanation is that John didn't miss her as much as she missed him."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "You are an AI assistant. User will give you a task. Your goal is to complete the task as faithfully as possible by breaking it down into step-by-step justifications. When performing the task, carefully analyze the given passage and options, and provide a clear explanation for your chosen answer.",
+            "Additional_Instruction": {
+                "Digit": "Provide an answer that is roughly 330 words.",
+                "Sentence": "Each sentence should not surpass 35 words.",
+                "Word": "All words in the answer are to be no less than 15 characters long.",
+                "Keyword": "Incorporate the keywords \"John\", \"Option\", \"Jennifer\" within your reply to ensure it is thorough and informative.",
+                "Desired_Writing_Style": "Formal and analytical tone, with a focus on logical reasoning and evidence-based explanations.",
+                "Semantic_elements": "The response should analyze a passage to determine the motivations behind an individual's actions in a relationship.",
+                "Morphological_Constraints": "Avoid using colloquial language, slang, or overly casual tone, and refrain from using rhetorical questions.",
+                "Multi-lingual_Constraints": "The response should be written in English, with proper grammar, spelling, and punctuation.",
+                "Hierarchical_Instructions": "The response should follow a three-step structure: analyze the passage, evaluate options, and select the most plausible explanation.",
+                "Paragraphs_Constraints": "The response should consist of five paragraphs, with a clear separation between each step and the conclusion.",
+                "Specific_Sentence": "The conclusion should start with 'Conclusion: Why did John not reach out to Jennifer first?'",
+                "Item_Listing_Details": "Options should be listed with a number, followed by a colon, and then the option response, and each option should be analyzed in a separate paragraph."
+            }
+        },
+        "cnt_id": 0,
+        "overlap": 0
+    },
+    {
+        "id": 193530,
+        "source": "orca_chat",
+        "messages": [
+            {
+                "role": "user",
+                "content": "\n\nThis article: Mike Waring, a private detective in Los Angeles whose nickname is \"The Falcon,\" is on a case. He follows a man named Andrews to a hotel, then reports back to his clients, club owners Kirk and Gregory, where the man, their business partner, can be found. They pay Waring a $500 fee, whereupon Wilma Rogers, who works at the club and likes Andrews, expresses her displeasure with Waring for informing on him. She also tips off Andrews that his partners are coming. Kirk and Gregory return, angry not only that they can't find Andrews or the $100,000 he embezzled, but that a hotel clerk, Perry, was under the impression that Waring left Andrews' room carrying what appeared to be a lot of money. Waring believes the club owners are trying to frame him. Elaine Carson offers to help, but before long Waring becomes suspicious of her behavior, too. Waring eventually is able to locate the missing money, which he gives to a police lieutenant, Cooper, for safekeeping. Then he exposes the real culprit behind Andrews' murder and the theft, Perry, the clerk. contains an answer for the question: What is the name of the business partner of Kirk and Gregory?, what is it ?\nAnswer:"
+            },
+            {
+                "role": "assistant",
+                "content": "The name of the business partner of Kirk and Gregory is Andrews."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "This article: Mike Waring, a private detective in Los Angeles whose nickname is \"The Falcon,\" is on a case. He follows a man named Andrews to a hotel, then reports back to his clients, club owners Kirk and Gregory, where the man, their business partner, can be found. They pay Waring a $500 fee, whereupon Wilma Rogers, who works at the club and likes Andrews, expresses her displeasure with Waring for informing on him. She also tips off Andrews that his partners are coming. Kirk and Gregory return, angry not only that they can't find Andrews or the $100,000 he embezzled, but that a hotel clerk, Perry, was under the impression that Waring left Andrews' room carrying what appeared to be a lot of money. Waring believes the club owners are trying to frame him. Elaine Carson offers to help, but before long Waring becomes suspicious of her behavior, too. Waring eventually is able to locate the missing money, which he gives to a police lieutenant, Cooper, for safekeeping. Then he exposes the real culprit behind Andrews' murder and the theft, Perry, the clerk. Identify the name of the business partner of Kirk and Gregory mentioned in the passage.",
+            "Additional_Instruction": {
+                "Digit": "Ensure your answer does not exceed 40 words.",
+                "Sentence": "Restrict each sentence to 15 words maximum.",
+                "Word": "Words should hold at least 10 characters in any answer.",
+                "Keyword": "In your reply, include the terms \"Gregory is Andrews\", \"Kirk and Gregory\", \"partner of Kirk\" to emphasize the critical components and provide clarity.",
+                "Punctuation": "Please verify that there are no commas in your entire response.",
+                "Desired_Writing_Style": "Write in a clear and concise manner, using a formal tone suitable for an informative article.",
+                "Semantic_elements": "Focus on providing a direct answer to the question, highlighting the business partner's name.",
+                "Morphological_Constraints": "Avoid using complex sentences or ambiguous language that may confuse the reader.",
+                "Specificity_Constraint": "Ensure the answer is a direct response to the question, without providing extraneous information.",
+                "Answer_Format": "Provide a complete sentence as the answer, with the business partner's name as the main subject.",
+                "Paragraphs_Constraints": "The response should consist of a single paragraph with no specific spacing or separators required.",
+                "Specific_Sentence": "The answer should begin with 'The name of the business partner of Kirk and Gregory is'."
+            }
+        },
+        "cnt_id": 1,
+        "overlap": 0
+    },
+    {
+        "id": 130372,
+        "source": "orca_chat",
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are an AI assistant. You will be given a task. You must generate a detailed and long answer.\n\nAnswer the following question: I am trying to decide whether it's worth it to invest in this film proposal. Can you help me answer a few questions? If you can't, please say \"No I can't\".  Question: Who do the two actors explain that the stunts were done by? Movie title: The Three Stooges Movie plot: The film is broken up into three shorts a la the original Stooges shorts, but they each form one movie.Episode One - More Orphan Than NotIt begins at the Sisters of Mercy Orphanage where the children are playing happily until cranky Sister Mary-Mengele (Larry David) tells them to go inside. The children begin to do a song as to why they should keep playing, but the nun cuts them off and tells them to go inside. That's when a car drives up by the orphanage and tosses a gym bag on their front steps. As Sister Mary-Mengele opens it up, two fingers poke her in the eyes, sending her falling off the steps. Another nun comes out and calls for Mother Superior (Jane Lynch) and the other nuns. They see baby Moe, Larry, and Curly, all with their trademark hairstyles. They immediately adore all of them, agreeing to split their time with the boys.Cut to ten years later where the nuns are now terrified of being with the boys. The boys are attempting to remove a tooth out of Sister Mary-Mengele's mouth until they are told that a wealthy couple is coming, so they go to prepare. The nuns plan to keep the other orphans out so that the couple will take the boys out of the orphanage once and for all.The couple, Mr. and Mrs. Harter (Stephen Collins and Carly Craig), watch Moe, Larry, and Curly do a little performance to get their attention until a smaller and more adorable boy named Teddy comes in. As the couple makes their final decision, they land on Moe and adopt him. As he is leaving, he says goodbye to Larry and Curly, taking something to remember them by. So he rips off a chunk of Larry's hair, and, since Curly has no hair to rip off. Moe plucks out some of his nose hairs.As he leaves, Moe already starts to miss his friends. When the Harters tell him that it's his birthday, and he can ask for anything, he asks that they go back for Larry and Curly. They go back, but end up leaving Moe and taking Teddy. When asked why he got sent back, Moe says he couldn't deal with the couple after their supposed talk of chores and cleaning...\nAnswer:"
+            },
+            {
+                "role": "assistant",
+                "content": "In the 2012 film, \"The Three Stooges,\" the main actors who play Moe, Larry, and Curly are Chris Diamantopoulos, Sean Hayes, and Will Sasso, respectively. Throughout the film, there is a combination of both actors and professional stunt performers executing the stunts that are commonly associated with the slapstick humor and physical comedy of the original Three Stooges.\n\nAlthough the actors have discussed their involvement in the stunts during promotional events and interviews, they often acknowledge that they were assisted by a team of skilled stunt performers. For instance, in various interviews, Sean Hayes, who plays Larry, has mentioned that he and his co-stars were trained by stunt coordinators and professionals to execute several of the iconic Three Stooges moves safely without sustaining injuries. \n\nSome of the notable stunt coordinators and performers who helped create the authentic slapstick comedy and stunts in the film include Chuck Borden, Keith Campbell, and Doug Coleman. These experienced professionals were responsible for ensuring that the stunts were executed safely and effectively, thus maintaining the integrity of the original Three Stooges comedy while providing a modern adaptation for viewers.\n\nIn conclusion, while the actors Chris Diamantopoulos, Sean Hayes, and Will Sasso performed certain stunts themselves, they were assisted and supported by a team of professional stunt performers and coordinators to execute various stunts and physical comedy scenes safely and effectively in \"The Three Stooges\" film. By collaborating with these talented stunt professionals, the actors were able to bring the iconic humor and slapstick comedy of the original characters to life in this modern adaptation."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "You are an AI assistant. You will be given a task. You must generate a detailed and long answer.\n\nAnswer the following question: I am trying to decide whether it's worth it to invest in this film proposal. Can you help me answer a few questions? If you can't, please say \"No I can't\".  Question: Who do the two actors explain that the stunts were done by in the 2012 film \"The Three Stooges\"? Provide specific details about the actors' involvement in the stunts and the role of professional stunt performers in the film.",
+            "Additional_Instruction": {
+                "Digit": "Answer with around 290 words.",
+                "Paragraph": "Each paragraph should comprise no more than 3 sentences.",
+                "Sentence": "Restrict each sentence to 55 words maximum.",
+                "Word": "Each word of the answer should be at least 15 characters long.",
+                "Keyword": "Include the following keywords in your response: \"Sean Hayes\", \"actors Chris Diamantopoulos\", \"play Moe\".",
+                "Desired_Writing_Style": "Formal and informative, with a neutral tone, suitable for a professional film analysis.",
+                "Semantic_elements": "The main theme is the involvement of actors and stunt performers in executing stunts in the 2012 film 'The Three Stooges'.",
+                "Morphological_Constraints": "Avoid using colloquial language, slang, or overly technical jargon, and refrain from using bullet points or numbered lists.",
+                "Specificity_Constraints": "Provide specific names of actors, stunt coordinators, and performers involved in the film, and mention the year of the film's release.",
+                "Relevance_Constraints": "Focus on the question of who performed the stunts in the film, and provide supporting evidence from interviews and behind-the-scenes information.",
+                "Length_Constraints": "The response should be detailed and long, with a minimum of 150 words, to provide a comprehensive answer to the question.",
+                "Format_Constraints": "The response should be in paragraph form, with clear transitions between sentences and ideas, and proper citation of sources if necessary.",
+                " Hierarchical_Instructions": "Prioritize the explanation of the actors' involvement in stunts, followed by the role of stunt coordinators and performers.",
+                "Specific_Sentence": "The response should begin with a sentence introducing the main actors who play Moe, Larry, and Curly."
+            }
+        },
+        "cnt_id": 2,
+        "overlap": 0
+    },
+    {
+        "id": 179070,
+        "source": "orca_chat",
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are an AI assistant that helps people find information. Provide a detailed answer so user don\u2019t need to search outside to understand the answer.\n\nQuestion: \"A natural Monopoly can develop when a company becomes a Monopoly due to its industry's high fixed or startup costs.\"\nIs the above claim true?\nOptions:\n- yes\n- no Let's think first. Step-by-step reasoning:"
+            },
+            {
+                "role": "assistant",
+                "content": "Yes, the claim is true. \n\nStep-by-step reasoning:\n1. A natural monopoly occurs when a single company is able to meet the entire market demand at a lower cost per unit than two or more firms combined. This is due to the industry's specific cost structure, characterized by high fixed or startup costs and the cost advantages of large-scale production.\n\n2. High fixed or startup costs: In some industries, such as utilities, there are high fixed costs, including investments in infrastructure, networks, and equipment. These costs can be a significant barrier to entry for new competitors. In a natural monopoly, the initial investment required is so high that it is not profitable for multiple firms to operate in the market simultaneously.\n\n3. Economies of scale: A natural monopoly also benefits from economies of scale, which occurs when a company's average cost of production decreases as the scale of production increases. As a result, larger firms have lower average costs than smaller firms, providing them with a competitive advantage in the market. In industries with a natural monopoly, the economies of scale are so significant that a single firm can produce at a lower average cost than two or more firms could together.\n\n4. Market demand and supply: Due to the high fixed costs and economies of scale, a single firm in a natural monopoly can supply the entire market demand at a lower per-unit cost than if multiple firms were operating within the industry. This allows the natural monopoly to lower prices and capture more market share, making it difficult for other companies to compete and eventually leading to the establishment of a monopoly over the industry.\n\nIn conclusion, a natural monopoly can develop when a company becomes a monopoly due to its industry's high fixed or startup costs and the cost advantages associated with large-scale production. This allows firms in industries with a natural monopoly to efficiently meet market demand and serve consumers at lower costs than would be possible with multiple competitors."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "You are an AI assistant that helps people find information. Provide a detailed answer so users don't need to search outside to understand the answer, including explanations and examples to support your response.\n\nQuestion: \"A natural Monopoly can develop when a company becomes a Monopoly due to its industry's high fixed or startup costs.\"\nIs the above claim true?\nOptions:\n- yes\n- no Let's think first. Step-by-step reasoning:",
+            "Additional_Instruction": {
+                "Digit": "Limit the response to a concise paragraph of no fewer than 350 and no more than 390 words to maintain focus and readability.",
+                "Sentence": "Restrict each sentence to 45 words maximum.",
+                "Word": "All words in the answer are to be no less than 15 characters long.",
+                "Desired_Writing_Style": "Provide a clear, concise, and well-structured response with a formal tone and academic language.",
+                "Semantic_elements": "Focus on explaining the concept of natural monopoly, its characteristics, and the role of high fixed or startup costs.",
+                "Additional_Context": "Assume the user has basic knowledge of economics and business, but may not be familiar with the specific concept of natural monopoly.",
+                "Specific_Keywords": "Include terms such as 'economies of scale', 'cost structure', and 'market demand' to enhance the response's relevance and accuracy.",
+                "Response_Length": "Aim for a response of approximately 350-400 words to provide a detailed and comprehensive answer.",
+                "Tone_and_Perspective": "Maintain a neutral tone and provide an objective explanation, avoiding promotional or biased language.",
+                "Paragraphs_Constraints": "The response should consist of five paragraphs, with a clear separation between each paragraph using a blank line.",
+                "Specific_Sentence": "The concluding sentence should start with 'In conclusion,' and summarize the main point.",
+                "Item_Listing_Details": "Use numbered lists (1., 2., 3., etc.) for step-by-step explanations, with each point describing a distinct aspect of natural monopoly."
+            }
+        },
+        "cnt_id": 3,
+        "overlap": 0
+    },
+    {
+        "id": 125401,
+        "source": "orca_chat",
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are an AI assistant. You will be given a task. You must generate a detailed and long answer.\n\nWrite the answer: During the American Civil War, what city was the capital of the Confederacy?"
+            },
+            {
+                "role": "assistant",
+                "content": "During the American Civil War, the capital city of the Confederacy was Richmond, Virginia. The American Civil War, which lasted from 1861 to 1865, was a conflict primarily fought between the Northern states, also known as the Union, and the Southern states, known as the Confederate States of America. The primary cause of the war was the disagreement over the issues of states' rights, westward expansion, and most importantly, the institution of slavery.\n\nRichmond, Virginia, was chosen as the capital of the Confederate States of America due to several strategic and political reasons. First and foremost, Virginia itself was a crucial state for the Confederacy, as it was one of the most populous and economically vital states in the South. Additionally, many important political and military figures of the Confederacy, such as Robert E. Lee, were Virginians. The state's geographic location served as a buffer between the Northern states and the deeper Confederate territory, making its protection an essential aspect of the Confederate military strategy.\n\nRichmond's specific characteristics made it an ideal choice for the Confederate capital. The city was located about 100 miles south of Washington, D.C., making it strategically close to the Union capital and symbolically asserting the Confederate presence on the eastern seaboard. Richmond was also a transportation hub, with several railways and vital waterways, such as the James River, converging in the city. This transportation network was essential for efficiently moving troops, supplies, and information throughout the Confederacy.\n\nAdditionally, Richmond was an important industrial center for the Confederacy. The city possessed significant iron and steel production facilities, such as the Tredegar Iron Works, which supplied much of the Confederate military's weaponry and artillery. Richmond's industrial capacity was vital for supporting and sustaining the Confederate war effort.\n\nHowever, Richmond's proximity to the Union capital and its strategic significance made it a primary target for the Union forces. Throughout the Civil War, several major battles and military campaigns, such as the Peninsula Campaign and the Seven Days Battles in 1862, the Virginia campaigns led by Union General Ulysses S. Grant in 1864, and finally, the 1864-1865 Siege of Petersburg, were fought with the ultimate aim of capturing Richmond.\n\nThe final days of the Confederate capital were marked by doom and desperation. As the Union armies closed in on the city and Confederate morale and resources dwindled, Richmond's residents faced food shortages, inflation, and deprivations. In April 1865, as General Robert E. Lee's Army of Northern Virginia retreated in the face of advancing Union forces, Confederate President Jefferson Davis and his government evacuated Richmond. The Union forces, led by General Grant, subsequently captured the city on April 3, 1865. Fires that accompanied the evacuation by the Confederates left much of the city in ruins.\n\nRichmond's fall marked the beginning of the end for the Confederacy. Mere days later, on April 9, 1865, General Lee surrendered to General Grant at Appomattox Court House, Virginia, signaling the imminent collapse of the Confederate government and bringing the American Civil War to a close."
+            }
+        ],
+        "Aug_instruction": {
+            "Refined_Instruction": "You are an AI assistant. You will be given a task. You must generate a detailed and long answer that provides historical context, explains the significance of the city, and describes its role during the war.\n\nWrite the answer: During the American Civil War, what city was the capital of the Confederacy?",
+            "Additional_Instruction": {
+                "Digit": "Provide an answer that is roughly 580 words.",
+                "Paragraph": "Keep paragraphs to a maximum of 4 sentences.",
+                "Sentence": "Each sentence should have a maximum of 60 words.",
+                "Word": "The words of each answer must meet a minimum length of 15 characters.",
+                "Keyword": "Incorporate the keywords \"American Civil War\", \"Confederate\" within your reply to ensure it is thorough and informative.",
+                "Punctuation": "Make sure your response does not contain any colons.",
+                "Desired_Writing_Style": "Formal, informative, and engaging, with a focus on historical accuracy and contextual relevance.",
+                "Semantic_elements": "The capital city of the Confederacy during the American Civil War, its significance, and its eventual fall.",
+                "Morphological_Constraints": "Avoid using colloquialisms, slang, or overly technical jargon, and refrain from using bullet points or numbered lists.",
+                "Specificity_Constraints": "Provide detailed information about Richmond's strategic and political importance, its industrial capacity, and its role in the war.",
+                "Tone_Constraints": "Maintain a neutral tone, avoiding emotional or biased language, and focus on presenting historical facts and context.",
+                "Length_Constraints": "The response should be detailed and long, aiming for a minimum of 300 words.",
+                "Format_Constraints": "Write in a cohesive, paragraph-based structure, with clear transitions between sections and ideas.",
+                "Contextual_Relevance_Constraints": "Ensure the response is relevant to the American Civil War and the Confederacy, and provides context for Richmond's significance.",
+                "Specific_Sentence": "The answer should provide a detailed description of Richmond, Virginia, as the capital of the Confederacy during the American Civil War."
+            }
+        },
+        "cnt_id": 4,
+        "overlap": 0
+    }
+]
