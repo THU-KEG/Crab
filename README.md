@@ -24,7 +24,7 @@ We also provide a pipeline for constructing high-quality complex instruction-fol
 
 **1. Prepare the seed data.**
 
-To prepare your environment for data processing, download the following datasets from the provided links and place them into the specified directory structure.
+Download the following datasets from the provided links to prepare your environment for data processing and place them into the specified directory structure.
 
 - Open-Assistant Dataset  : [OpenAssistant on HF](https://huggingface.co/datasets/OpenAssistant/oasst2)
 - WizardLM Dataset  : [WizardLM on HF](https://huggingface.co/datasets/WizardLMTeam/WizardLM_evol_instruct_V2_196k/tree/main)
